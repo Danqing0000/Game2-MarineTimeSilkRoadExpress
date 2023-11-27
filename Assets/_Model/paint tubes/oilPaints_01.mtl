@@ -1,0 +1,212 @@
+newmtl oilPaints_01_blackishGreenLabel_Mat
+Pr 0.425
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.0 0.031 0.050
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0
+newmtl oilPaints_01_yellowLabel_Mat
+Pr 0.425
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.541 0.490 0.086
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0
+newmtl oilPaints_01_ponceauLabel_Mat
+Pr 0.425
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.231 0.003 0.023
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0
+newmtl oilPaints_01_coffeeLabel_Mat
+Pr 0.425
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.337 0.054 0.003
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0
+newmtl oilPaints_01_acidBlueLabel_Mat
+Pr 0.425
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.0 0.003 0.164
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0
+newmtl oilPaints_01_redLabel_Mat
+Pr 0.425
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.431 0.007 0.007
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0
+newmtl oilPaints_01_grayLabel_Mat
+Pr 0.425
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.003 0.003 0.003
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0
+newmtl oilPaints_01_orangeLabel_Mat
+Pr 0.425
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.749 0.325 0.035
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0
+newmtl oilPaints_01_pot
+Ni 20.00
+Ka 0 0 0
+Pm 1
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal oilPaints_01/oilPaints_01_pot_normal.png
+map_Kd oilPaints_01/oilPaints_01_pot_baseColor.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_map_roughness oilPaints_01/oilPaints_01_pot_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0
+newmtl oilPaints_01_brownLabel_Mat
+Pr 0.425
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.047 0.003 0.0
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0
+newmtl oilPaints_01_orangeRedLabel_Mat
+Pr 0.425
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.631 0.015 0.0
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0
+newmtl oilPaints_01_whiteLabel_Mat
+Pr 0.425
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 1.0 1.0 1.0
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0
+newmtl oilPaints_01_lid
+Pr 0.594
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.866 0.866 0.866
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0
+newmtl oilPaints_01_blueLabel_Mat
+Pr 0.425
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.0 0.125 0.458
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0

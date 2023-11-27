@@ -1,0 +1,72 @@
+mdl 1.3;
+
+using state import *;
+
+import adobe::mtl::*;
+import adobe::util::*;
+import ::tex::gamma_mode;
+import ::state::normal;
+
+export material office_tape_1551_tape_MatSG_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0.8),
+    interiorColor : color(1.0, 1.0, 1.0),
+    indexOfRefraction : float(1.4000),
+    metallic : float(0.0),
+    baseColor : color(1.0, 1.0, 1.0),
+    roughness : float(0.44),
+    density : float(0),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material office_tape_1551_plastic_MatSG_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0.0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    indexOfRefraction : float(1.6000),
+    metallic : adobe::util::float_texture( texture_2d("office_tape_1551/office_tape_1551_plastic_Mat_metallic.png", ::tex::gamma_linear) ),
+    baseColor : adobe::util::color_texture( texture_2d("office_tape_1551/office_tape_1551_plastic_Mat_baseColor.png", ::tex::gamma_srgb) ),
+    roughness : adobe::util::float_texture( texture_2d("office_tape_1551/office_tape_1551_plastic_Mat_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    glow : float(0.0),
+    opacity : adobe::util::float_texture( texture_2d("office_tape_1551/office_tape_1551_plastic_Mat_opacity.png", ::tex::gamma_linear) ),
+    normal : adobe::util::normal_texture( texture_2d("office_tape_1551/office_tape_1551_plastic_Mat_normal.png", ::tex::gamma_linear) ),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material office_tape_1551_shell_MatSG_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(1.0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    indexOfRefraction : float(1.44),
+    metallic : float(0.0),
+    baseColor : color(0.91, 0.91, 0.91),
+    roughness : float(0.11),
+    density : float(0),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material office_tape_1551_metalSG_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0.0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    indexOfRefraction : float(1.6000),
+    metallic : adobe::util::float_texture( texture_2d("office_tape_1551/office_tape_1551_metal_Mat_metallic.png", ::tex::gamma_linear) ),
+    baseColor : adobe::util::color_texture( texture_2d("office_tape_1551/office_tape_1551_metal_Mat_baseColor.png", ::tex::gamma_srgb) ),
+    roughness : adobe::util::float_texture( texture_2d("office_tape_1551/office_tape_1551_metal_Mat_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : adobe::util::normal_texture( texture_2d("office_tape_1551/office_tape_1551_metal_Mat_normal.png", ::tex::gamma_linear) ),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );

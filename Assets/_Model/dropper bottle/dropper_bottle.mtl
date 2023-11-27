@@ -1,0 +1,78 @@
+newmtl glass_Mat
+Pr 0.000
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 1.0 1.0 1.0
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 1.000
+newmtl plastic_top_Mat
+Pr 1.000
+Ni 1.600
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0.0
+newmtl label_Mat
+Pr 0.845
+Ni 1.500
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.701 0.701 0.701
+adobe_map_normal dropper_bottle/label_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 0.0
+newmtl liquid_inside_Mat
+Pr 0.000
+Ni 1.500
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 1.0 1.0 1.0
+adobe_map_normal dropper_bottle/liquid_inside_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 0.658 0.215
+adobe_density 0.010
+Ns 16
+adobe_translucence 1.000
+newmtl plastic_tube_Mat
+Pr 0.000
+Ni 1.300
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 1.0 1.0 1.0
+adobe_map_normal dropper_bottle/plastic_tube_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0
+Ns 16
+adobe_translucence 1.000

@@ -1,0 +1,68 @@
+newmtl wood_Mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal art_palette_with_paints_and_brushes/wood_Mat_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness art_palette_with_paints_and_brushes/wood_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm art_palette_with_paints_and_brushes/wood_Mat_metallic.png
+Ns 16
+map_Kd art_palette_with_paints_and_brushes/wood_Mat_baseColor.png
+newmtl paint_Mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal art_palette_with_paints_and_brushes/paint_Mat_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness art_palette_with_paints_and_brushes/paint_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm art_palette_with_paints_and_brushes/paint_Mat_metallic.png
+Ns 16
+map_Kd art_palette_with_paints_and_brushes/paint_Mat_baseColor.png
+newmtl metal_Mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal art_palette_with_paints_and_brushes/metal_Mat_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness art_palette_with_paints_and_brushes/metal_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm art_palette_with_paints_and_brushes/metal_Mat_metallic.png
+Ns 16
+map_Kd art_palette_with_paints_and_brushes/metal_Mat_baseColor.png
+newmtl plastic_Mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal art_palette_with_paints_and_brushes/plastic_Mat_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness art_palette_with_paints_and_brushes/plastic_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm art_palette_with_paints_and_brushes/plastic_Mat_metallic.png
+Ns 16
+map_Kd art_palette_with_paints_and_brushes/plastic_Mat_baseColor.png

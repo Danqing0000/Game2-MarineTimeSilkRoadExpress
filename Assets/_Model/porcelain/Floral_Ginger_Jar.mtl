@@ -1,0 +1,18 @@
+newmtl Jar_Mat
+Ni 1.6
+Ka 0 0 0
+map_Ke Floral_Ginger_Jar/Jar_Mat_glow.png
+d 1
+Kd 0 0 0
+adobe_map_normal Floral_Ginger_Jar/Jar_Mat_normal.png
+map_d Floral_Ginger_Jar/Jar_Mat_opacity.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness Floral_Ginger_Jar/Jar_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm Floral_Ginger_Jar/Jar_Mat_metallic.png
+Ns 16
+map_Kd Floral_Ginger_Jar/Jar_Mat_baseColor.png

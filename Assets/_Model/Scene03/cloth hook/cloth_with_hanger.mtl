@@ -1,0 +1,34 @@
+newmtl Cloth_mat
+Pr 0.921
+Ni 1.5
+Ka 0 0 0
+Pm 0
+d 1
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal cloth_with_hanger/Cloth_mat_normal.png
+map_d cloth_with_hanger/Cloth_mat_opacity.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 1.0
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 1.0
+Ns 16
+map_Kd cloth_with_hanger/Cloth_mat_baseColor.png
+newmtl Hanger_mat
+Pr 0.368
+Ni 1.5
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 1.0
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 1.0
+map_Pm cloth_with_hanger/Hanger_mat_metallic.png
+Ns 16
+map_Kd cloth_with_hanger/Hanger_mat_baseColor.png

@@ -1,0 +1,68 @@
+newmtl push_button_Mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal ClassicPen/push_button_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness ClassicPen/push_button_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm ClassicPen/push_button_metallic.png
+Ns 16
+map_Kd ClassicPen/push_button_baseColor.png
+newmtl casing_Mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal ClassicPen/casing_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness ClassicPen/casing_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm ClassicPen/casing_metallic.png
+Ns 16
+map_Kd ClassicPen/casing_baseColor.png
+newmtl clip_Mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal ClassicPen/clip_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness ClassicPen/clip_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm ClassicPen/clip_metallic.png
+Ns 16
+map_Kd ClassicPen/clip_baseColor.png
+newmtl rings_Mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal ClassicPen/rings_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness ClassicPen/rings_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm ClassicPen/rings_metallic.png
+Ns 16
+map_Kd ClassicPen/rings_baseColor.png

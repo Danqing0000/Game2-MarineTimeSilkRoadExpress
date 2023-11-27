@@ -1,0 +1,280 @@
+mdl 1.3;
+
+using state import *;
+
+import adobe::mtl::*;
+import adobe::util::*;
+import ::tex::gamma_mode;
+import ::state::normal;
+
+export material jarMason_hair_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : color(0.0705, 0.047, 0.047),
+    roughness : float(0.1778),
+    density : float(0),
+    indexOfRefraction : float(1.6000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_capMeta_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : color(0.0, 0.0, 0.0),
+    roughness : adobe::util::float_texture( texture_2d("jarMason/jarMason_capMeta_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    indexOfRefraction : float(15.0000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_gouacheRod_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : adobe::util::color_texture( texture_2d("jarMason/jarMason_gouacheRod_baseColor.png", ::tex::gamma_srgb) ),
+    roughness : adobe::util::float_texture( texture_2d("jarMason/jarMason_gouacheRod_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    indexOfRefraction : float(1.6000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : adobe::util::normal_texture( texture_2d("jarMason/jarMason_gouacheRod_normal.png", ::tex::gamma_linear) ),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_brushGules_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : adobe::util::color_texture( texture_2d("jarMason/jarMason_brushGules_baseColor.png", ::tex::gamma_srgb) ),
+    roughness : adobe::util::float_texture( texture_2d("jarMason/jarMason_brushGules_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    indexOfRefraction : float(1.6000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : adobe::util::normal_texture( texture_2d("jarMason/jarMason_brushGules_normal.png", ::tex::gamma_linear) ),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_glass_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(1.0000),
+    baseColor : color(1.0, 1.0, 1.0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    roughness : adobe::util::float_texture( texture_2d("jarMason/jarMason_glass_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    indexOfRefraction : float(1.5000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : adobe::util::normal_texture( texture_2d("jarMason/jarMason_glass_normal.png", ::tex::gamma_linear) ),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_body_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : color(0.0, 0.0, 0.0),
+    roughness : adobe::util::float_texture( texture_2d("jarMason/jarMason_body_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    indexOfRefraction : float(8.0000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_capTopPattern_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : adobe::util::color_texture( texture_2d("jarMason/jarMason_capTopPattern_baseColor.png", ::tex::gamma_srgb) ),
+    roughness : float(0.2991),
+    density : float(0),
+    indexOfRefraction : float(8.0000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_hairTipBrown_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : adobe::util::color_texture( texture_2d("jarMason/jarMason_hairTipBrown_baseColor.png", ::tex::gamma_srgb) ),
+    roughness : float(0.5494),
+    density : float(0),
+    indexOfRefraction : float(1.6000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_penMetal_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : color(0.0, 0.0, 0.0),
+    roughness : adobe::util::float_texture( texture_2d("jarMason/jarMason_penMetal_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    indexOfRefraction : float(16.0000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : adobe::util::normal_texture( texture_2d("jarMason/jarMason_penMetal_normal.png", ::tex::gamma_linear) ),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_capTopGules_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : color(0.3058, 0.0, 0.0),
+    roughness : adobe::util::float_texture( texture_2d("jarMason/jarMason_capTopGules_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    indexOfRefraction : float(8.0000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_gouacheMetal_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : adobe::util::color_texture( texture_2d("jarMason/jarMason_gouacheMetal_baseColor.png", ::tex::gamma_srgb) ),
+    roughness : adobe::util::float_texture( texture_2d("jarMason/jarMason_gouacheMetal_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    indexOfRefraction : float(1.6000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : adobe::util::normal_texture( texture_2d("jarMason/jarMason_gouacheMetal_normal.png", ::tex::gamma_linear) ),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_pen_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : color(0.0, 0.0, 0.0),
+    roughness : adobe::util::float_texture( texture_2d("jarMason/jarMason_pen_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    indexOfRefraction : float(2.5000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_feedingTube_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : color(0.0, 0.0, 0.0),
+    roughness : adobe::util::float_texture( texture_2d("jarMason/jarMason_feedingTube_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    indexOfRefraction : float(15.0000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_cap_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : color(0.498, 0.4823, 0.3843),
+    roughness : adobe::util::float_texture( texture_2d("jarMason/jarMason_cap_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    indexOfRefraction : float(8.0000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_brushViolet_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : adobe::util::color_texture( texture_2d("jarMason/jarMason_brushViolet_baseColor.png", ::tex::gamma_srgb) ),
+    roughness : adobe::util::float_texture( texture_2d("jarMason/jarMason_brushViolet_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    indexOfRefraction : float(1.6000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : adobe::util::normal_texture( texture_2d("jarMason/jarMason_brushViolet_normal.png", ::tex::gamma_linear) ),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_refill_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : color(0.0, 0.0, 0.0),
+    roughness : adobe::util::float_texture( texture_2d("jarMason/jarMason_refill_roughness.png", ::tex::gamma_linear) ),
+    density : float(0),
+    indexOfRefraction : float(2.0000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : adobe::util::normal_texture( texture_2d("jarMason/jarMason_refill_normal.png", ::tex::gamma_linear) ),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jarMason_hairTipBack_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(0),
+    interiorColor : color(1.0, 1.0, 1.0),
+    metallic : float(0),
+    baseColor : adobe::util::color_texture( texture_2d("jarMason/jarMason_hairTipBack_baseColor.png", ::tex::gamma_srgb) ),
+    roughness : float(0.5494),
+    density : float(0),
+    indexOfRefraction : float(1.6000),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );

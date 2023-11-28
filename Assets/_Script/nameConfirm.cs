@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class nameConfirm : MonoBehaviour
@@ -19,6 +20,7 @@ public class nameConfirm : MonoBehaviour
         {
             Debug.Log("ok");
             notice.text = "correct";
+            SceneManager.LoadScene("Scene00Start");
         }
         if ((serialInput.text != "ASD1234") || (nameInput.text != "11111"))
         {

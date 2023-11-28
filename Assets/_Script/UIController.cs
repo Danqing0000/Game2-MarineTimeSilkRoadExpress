@@ -8,7 +8,13 @@ public class UIController : MonoBehaviour
     public GameObject panelPage;
 
 
-     public void closePanel(string panelName)
+    public void openPanel(string panelName)
+    {
+        panelPage = GameObject.Find(panelName);
+        panelPage.SetActive(true);
+    }
+    
+    public void closePanel(string panelName)
     {
         panelPage = GameObject.Find(panelName);
         panelPage.SetActive(false);

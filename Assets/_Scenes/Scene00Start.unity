@@ -420,7 +420,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 920933632}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: closePanel
         m_Mode: 5
@@ -1402,17 +1402,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
---- !u!114 &920933632 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6495882133623303592, guid: b2e3eaa998b25414abcdead72eafbba5, type: 3}
-  m_PrefabInstance: {fileID: 1164579276}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a770106bf67214a8ebe1b11925995b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1037521281
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,63 +1537,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037521281}
   m_CullTransparentMesh: 1
---- !u!1001 &1164579276
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6495882133623303593, guid: b2e3eaa998b25414abcdead72eafbba5, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495882133623303593, guid: b2e3eaa998b25414abcdead72eafbba5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 502.25818
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495882133623303593, guid: b2e3eaa998b25414abcdead72eafbba5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 234.51717
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495882133623303593, guid: b2e3eaa998b25414abcdead72eafbba5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3.056109
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495882133623303593, guid: b2e3eaa998b25414abcdead72eafbba5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495882133623303593, guid: b2e3eaa998b25414abcdead72eafbba5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495882133623303593, guid: b2e3eaa998b25414abcdead72eafbba5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495882133623303593, guid: b2e3eaa998b25414abcdead72eafbba5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495882133623303593, guid: b2e3eaa998b25414abcdead72eafbba5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495882133623303593, guid: b2e3eaa998b25414abcdead72eafbba5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495882133623303593, guid: b2e3eaa998b25414abcdead72eafbba5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495882133623303595, guid: b2e3eaa998b25414abcdead72eafbba5, type: 3}
-      propertyPath: m_Name
-      value: UIController
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b2e3eaa998b25414abcdead72eafbba5, type: 3}
 --- !u!1 &1194417264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,7 +1756,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 920933632}
+      - m_Target: {fileID: 2063798949}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 5
@@ -1977,6 +1909,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &1501319927
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6697351864520880705, guid: f5b447e6cc7fba9449557b629ef16d70, type: 3}
+      propertyPath: m_Name
+      value: UIController
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697351864520880707, guid: f5b447e6cc7fba9449557b629ef16d70, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697351864520880707, guid: f5b447e6cc7fba9449557b629ef16d70, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 502.25818
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697351864520880707, guid: f5b447e6cc7fba9449557b629ef16d70, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 234.51717
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697351864520880707, guid: f5b447e6cc7fba9449557b629ef16d70, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.056109
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697351864520880707, guid: f5b447e6cc7fba9449557b629ef16d70, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697351864520880707, guid: f5b447e6cc7fba9449557b629ef16d70, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697351864520880707, guid: f5b447e6cc7fba9449557b629ef16d70, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697351864520880707, guid: f5b447e6cc7fba9449557b629ef16d70, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697351864520880707, guid: f5b447e6cc7fba9449557b629ef16d70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697351864520880707, guid: f5b447e6cc7fba9449557b629ef16d70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697351864520880707, guid: f5b447e6cc7fba9449557b629ef16d70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f5b447e6cc7fba9449557b629ef16d70, type: 3}
 --- !u!1 &1502746948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,7 +2050,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 920933632}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: closePanel
         m_Mode: 5
@@ -2260,7 +2249,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 920933632}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
@@ -2916,6 +2905,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062281509}
   m_CullTransparentMesh: 1
+--- !u!114 &2063798949 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6697351864520880706, guid: f5b447e6cc7fba9449557b629ef16d70, type: 3}
+  m_PrefabInstance: {fileID: 1501319927}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a770106bf67214a8ebe1b11925995b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2130217123
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,8 +14,8 @@ public class GameManager : MonoBehaviour
     // public List<string> Cylinder;
     // public List<string> Capsule;
 
-    int CharSerial;
-    int CRSerial;
+    public static int CharSerial;
+    public static int CRSerial;
 
 
     // [System.Serializable]
@@ -49,8 +50,13 @@ public class GameManager : MonoBehaviour
     public CRList listCRList = new CRList();
 
     public void Start()
-    {
-
+    {   
+        if (SceneManager.GetActiveScene ().name == "Scene04Workspace")
+        {
+            CRObjectList[CRSerial].SetActive(true);
+            Debug.Log("1");
+        }
+            
     }
 
     void Awake()
@@ -80,14 +86,16 @@ public class GameManager : MonoBehaviour
         // delete CR after using.
         // use List.length shrink the range of random serial number
         CRObjectList[CRSerial].SetActive(false); //hide original characters
-        CRSerial = Random.Range(0, 4);
+        CRSerial = Random.Range(0, 5);
         Debug.Log("CRSerial=" + CRSerial);
         CRObjectList[CRSerial].SetActive(true); //show new characters
         //CRObjectList.RemoveAt(CRSerial);
 
         Debug.Log(CRObjectList[CRSerial].name);
         //Debug.Log(CRContentList[CRSerial]);
-        Debug.Log(listCRList.CRLists[CRSerial].CRContentList[2]);
+        //Debug.Log(listCRList.CRLists[CRSerial].CRContentList[2]);
+        
     }
+
 
 }

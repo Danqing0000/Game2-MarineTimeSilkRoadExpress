@@ -50,15 +50,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   CRObjectList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Cube: []
-  Sphere: []
-  Cylinder: []
-  Capsule:
-  - 
+  - {fileID: 5694078899224195040, guid: 6bfbab151af46374ab012b2e358f12fe, type: 3}
+  - {fileID: 7589923572513983140, guid: feaa2460b2e543747985abd12dfc65d8, type: 3}
+  - {fileID: 2061804324374879460, guid: a273bb46989c74647b7c2cd7890d9c87, type: 3}
+  - {fileID: 5308451390034973349, guid: ec89faba43d79724dad0ba50c211d9d6, type: 3}
+  - {fileID: 7170737421949058239, guid: aecc667692378ef45a1cd05664415ef5, type: 3}
   listCRList:
     CRLists:
     - CRContentList:

@@ -14,6 +14,8 @@ public class TaskUpdate : MonoBehaviour
     public List<bool> finishState;
     public int taskTotalNum;
     public bool finalState; //所有任务的完成情况
+    public bool currentTaskState;
+    public int a = 2;
 
     public void Start()
     {
@@ -24,39 +26,48 @@ public class TaskUpdate : MonoBehaviour
     public void getTotalTaskNum(int x)
     {
         taskTotalNum = x;
-        Debug.Log("total number" + x);
+        //Debug.Log("total number" + x);
     }
 
-    public void getTaskBool(int y, bool state)
+    public void setTaskBool(int y, bool state) //recore total task
     {
-        Debug.Log("number" + y);
+        //Debug.Log("number" + y);
         //Debug.Log(state);
         taskCheck[y] = state;
 
         tools[y].GetComponent<Collider>().enabled = state;
-        Debug.Log(tools[y].GetComponent<Collider>().enabled);
+        //Debug.Log(tools[y].GetComponent<Collider>().enabled);
     }
 
     public void finishStateCheck(int serialnumber)
     {
         finishState[serialnumber] = true;
-        taskeach[serialnumber].color = Color.gray;
+        taskeach[a-1].color = Color.gray;
+        a = a + 1;
+        if (serialnumber == 5)
+            a = 2;
     }
 
-    public bool CheckAll()
+    public bool CheckAll(int currentid)
     {
         finalState = true;
-        for (int i = 1; i <=4; i++)
+        for (int i = 0; i < currentid; i++)
         {
-            if (finishState[i] == false)
+            currentTaskState = taskCheck[currentid];
+            if ((currentTaskState == true) && (finishState[i] == false)) //taskstate: if the player need to do the task; finishState: if the tasks have been finished
             {
-                //Debug.Log("List " + (i+1) +" hasn't been finished!");
+                Debug.Log("previous unfinish");
                 finalState = false;
-                i = i-1; //阻止i递增 确保一直按照顺序完成
+                //i = i-1; //阻止i递增 确保一直按照顺序完成 no need??
                 break;
             }
+            else if (currentTaskState == false)
+            {
+                finishState[i] = true;
+            }
+            
         }
-
-        return finalState;
+        Debug.Log(finalState);
+        return finalState; // finalstate = true, previous tasks have been finished; finalstate = false, previous tasks haven't finished
     }
 }

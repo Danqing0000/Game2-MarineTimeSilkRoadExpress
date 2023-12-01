@@ -44,36 +44,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87874e3fad0ad043885b60c571ecd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RandomCharacter:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  update: {fileID: 0}
   CRObjectList:
-  - {fileID: 5694078899224195040, guid: 6bfbab151af46374ab012b2e358f12fe, type: 3}
-  - {fileID: 7589923572513983140, guid: feaa2460b2e543747985abd12dfc65d8, type: 3}
-  - {fileID: 2061804324374879460, guid: a273bb46989c74647b7c2cd7890d9c87, type: 3}
-  - {fileID: 5308451390034973349, guid: ec89faba43d79724dad0ba50c211d9d6, type: 3}
-  - {fileID: 7170737421949058239, guid: aecc667692378ef45a1cd05664415ef5, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  taskeach:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   listCRList:
     CRLists:
     - CRContentList:
-      - Cube
-      - 1
-      - a
-      - A
+      - Dish
+      - 2233
+      - Color
+      - Repair
+      - Polish
+      - Deliver
     - CRContentList:
-      - Sphere
-      - 2
-      - b
-      - B
+      - Compass
+      - 345
+      - /
+      - Repair
+      - Polish
+      - Deliver
     - CRContentList:
-      - Cylinder
-      - 3
-      - c
-      - C
+      - Spice
+      - 1122
+      - /
+      - /
+      - /
+      - Deliver
     - CRContentList:
-      - Capsule
-      - 4
-      - d
-      - D
+      - Coin
+      - 234
+      - /
+      - /
+      - Polish
+      - Deliver
+    - CRContentList:
+      - Fan
+      - 456
+      - Color
+      - Repair
+      - Polish
+      - Deliver

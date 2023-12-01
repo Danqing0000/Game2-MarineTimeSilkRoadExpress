@@ -7,12 +7,15 @@ using UnityEngine.SceneManagement;
 public class CRConfirm : MonoBehaviour
 {
     public TMP_Text notice;
+    public GameManager myManager;
     public void confirm()
     {
+        //notice.text = "Is that what he/ she wants?";
         if (CameraControl.ChoseSerial == GameManager.CRSerial)
         {
             Debug.Log("1");
             SceneManager.LoadScene("Scene04Workspace");
+            //myManager.taskUpload();
         }
         else
         {

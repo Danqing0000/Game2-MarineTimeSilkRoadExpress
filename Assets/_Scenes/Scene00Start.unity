@@ -1986,29 +1986,125 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: update
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: taskeach.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: taskeach.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: taskeach.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: taskeach.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: taskeach.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: taskeach.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: taskeach.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: CRObjectList.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: CRObjectList.Array.data[0]
       value: 
-      objectReference: {fileID: 5694078899224195040, guid: 6bfbab151af46374ab012b2e358f12fe, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: CRObjectList.Array.data[1]
       value: 
-      objectReference: {fileID: 7589923572513983140, guid: feaa2460b2e543747985abd12dfc65d8, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: CRObjectList.Array.data[2]
       value: 
-      objectReference: {fileID: 2061804324374879460, guid: a273bb46989c74647b7c2cd7890d9c87, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: CRObjectList.Array.data[3]
       value: 
-      objectReference: {fileID: 5308451390034973349, guid: ec89faba43d79724dad0ba50c211d9d6, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: CRObjectList.Array.data[4]
       value: 
-      objectReference: {fileID: 7170737421949058239, guid: aecc667692378ef45a1cd05664415ef5, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[0].CRContentList.Array.data[0]
+      value: Spice
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[0].CRContentList.Array.data[1]
+      value: 1122
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[0].CRContentList.Array.data[2]
+      value: /
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[0].CRContentList.Array.data[3]
+      value: /
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[0].CRContentList.Array.data[4]
+      value: /
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[1].CRContentList.Array.data[0]
+      value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[1].CRContentList.Array.data[1]
+      value: 234
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[1].CRContentList.Array.data[3]
+      value: /
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[2].CRContentList.Array.data[0]
+      value: Compass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[2].CRContentList.Array.data[1]
+      value: 345
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[2].CRContentList.Array.data[3]
+      value: Repair
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[2].CRContentList.Array.data[4]
+      value: Polish
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[3].CRContentList.Array.data[0]
+      value: Dish
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[3].CRContentList.Array.data[1]
+      value: 2233
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[3].CRContentList.Array.data[2]
+      value: Color
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[3].CRContentList.Array.data[3]
+      value: Repair
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
 --- !u!1001 &1501319927
@@ -2152,7 +2248,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2063798949}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: closePanel
         m_Mode: 5
@@ -2351,7 +2447,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2063798949}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1

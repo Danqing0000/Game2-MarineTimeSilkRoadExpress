@@ -37,7 +37,7 @@ public class matchcolor : MonoBehaviour
         if ((changeornot[0] == true) && (changeornot[1] == true) && (changeornot[2] == true))
         {
             colorFinalState = true;
-            myUpdate.finishStateCheck(1);
+            myUpdate.finishStateCheck(2);
             Debug.Log("color all");
         }
 

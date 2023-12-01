@@ -27,7 +27,7 @@ public class swipe : MonoBehaviour
 
     void OnMouseDown()
     {   
-        if (finished == false)
+        if ((finished == false) && (myUpdate.CheckAll(2)))
         {
             animator.SetTrigger("pickup");
         }
@@ -92,14 +92,14 @@ public class swipe : MonoBehaviour
 
     void FinishTest(int testnum)
     {
-        if (testnum == 6)
+        if (testnum == 3)
         {
             animator.SetBool("test", true);
             Debug.Log("done");
             //StartCoroutine(CoundDown(5));
             myCollider.enabled =! myCollider.enabled;
             finished = true;
-            myUpdate.finishStateCheck(3);
+            myUpdate.finishStateCheck(4);
         }
     }
 

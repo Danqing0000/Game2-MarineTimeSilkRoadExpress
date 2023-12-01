@@ -12,17 +12,48 @@ public class nameConfirm : MonoBehaviour
     public TMP_InputField nameInput;
     public TMP_InputField serialInput;
     public TMP_Text notice;
+    public TMP_Text idname;
+    public TMP_Text idnum;
 
+    public TMP_Text submit;
+    public bool submitfinalState = false;
+    public GameManager myManager;
+    public void Start()
+    {
+        idname.text = "Name: " + myManager.listCRList.CRLists[GameManager.CRSerial].CRContentList[0];
+        idnum.text = "ID Number: " + myManager.listCRList.CRLists[GameManager.CRSerial].CRContentList[1];
+
+    }
 
     public void inputCheck()
     {
-        if ((serialInput.text == "ASD1234") && (nameInput.text == "11111"))
+        // if ((serialInput.text == "ASD1234") && (nameInput.text == "11111"))
+        // {
+        //     Debug.Log("ok");
+        //     notice.text = "correct";
+        //     SceneManager.LoadScene("Scene00Start");
+        // }
+        // if ((serialInput.text != "ASD1234") || (nameInput.text != "11111"))
+        // {
+        //     notice.text = "input wrong";
+        //     Debug.Log("wrong");
+        // }
+        // if ((serialInput.text == "") || (nameInput.text == "")) //it's not null!!!
+        // {
+        //     notice.text = "please input";
+        //     Debug.Log("input incomplete");
+        // }
+
+
+        if ((nameInput.text == myManager.listCRList.CRLists[GameManager.CRSerial].CRContentList[0]) && (serialInput.text == myManager.listCRList.CRLists[GameManager.CRSerial].CRContentList[1]))
         {
             Debug.Log("ok");
             notice.text = "correct";
-            SceneManager.LoadScene("Scene00Start");
+            submit.text = "Deliver";
+            submitfinalState = true;
+            //SceneManager.LoadScene("Scene00Start");
         }
-        if ((serialInput.text != "ASD1234") || (nameInput.text != "11111"))
+        if ((nameInput.text != myManager.listCRList.CRLists[GameManager.CRSerial].CRContentList[0]) || (serialInput.text != myManager.listCRList.CRLists[GameManager.CRSerial].CRContentList[1]))
         {
             notice.text = "input wrong";
             Debug.Log("wrong");
@@ -32,5 +63,15 @@ public class nameConfirm : MonoBehaviour
             notice.text = "please input";
             Debug.Log("input incomplete");
         }
+    }
+
+    public void deliverChangeScene()
+    {
+        if (submitfinalState == true)
+        {
+            SceneManager.LoadScene("Scene02Reception"); //add waitforseconds
+            GameManager.sceneCheck = true;
+        }
+
     }
 }

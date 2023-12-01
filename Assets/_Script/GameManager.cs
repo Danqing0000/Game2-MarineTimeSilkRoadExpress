@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public static int CharSerial;
     public static int CRSerial;
     //public static int taskTotal;
+    public static bool sceneCheck = true;
 
 
     [System.Serializable]
@@ -38,25 +39,46 @@ public class GameManager : MonoBehaviour
 
     public CRList listCRList = new CRList();
 
-    public void Start()
-    {
-        if (SceneManager.GetActiveScene().name == "Scene04Workspace")
-        {
-            taskUpload();
-        }
+    // public void OnSceneLoaded(Scene scene, LoadSceneMode.Single)
+    // {
+    //     if (SceneManager.GetActiveScene().name == "Scene04Workspace")
+    //     {
+    //         taskUpload();
+    //         Debug.Log("task uploaded");
+    //     }
 
-    }
+    // }
 
     void Awake()
     {
         if (myGameManager == null)
             myGameManager = this;
-        else if (myGameManager != this)
-            Destroy(gameObject);
-        DontDestroyOnLoad(gameObject);
+        // else if (myGameManager != this)
+        //     Destroy(gameObject);
+        //DontDestroyOnLoad(gameObject);
         //Debug.Log(this.gameObject.name);
         //RandomChar();
         //RandomCR();
+    }
+
+    // public void Update()
+    // {
+    //     if ((SceneManager.GetActiveScene().name == "Scene04Workspace") && (sceneCheck == true))
+    //     {
+    //         taskUpload();
+    //         Debug.Log("task uploaded");
+    //     }
+
+    // }
+
+    public void Start()
+    {
+        if ((SceneManager.GetActiveScene().name == "Scene04Workspace") && (sceneCheck == true))
+        {
+            taskUpload();
+            Debug.Log("task uploaded");
+        }
+
     }
 
     // public void RandomChar()
@@ -72,14 +94,16 @@ public class GameManager : MonoBehaviour
     {
         // delete CR after using.
         // use List.length shrink the range of random serial number
-        CRObjectList[CRSerial].SetActive(false); //hide original characters
+
         CRSerial = Random.Range(0, 5);
         Debug.Log("CRSerial=" + CRSerial);
         //CRObjectList.RemoveAt(CRSerial);
 
-        Debug.Log(CRObjectList[CRSerial].name);
+        //Debug.Log(CRObjectList[CRSerial].name);
         //Debug.Log(CRContentList[CRSerial]);
         //Debug.Log(listCRList.CRLists[CRSerial].CRContentList[2]);
+        if (SceneManager.GetActiveScene().name == "Scene04Workspace")
+            CRObjectList[CRSerial].SetActive(false); //hide original characters
 
     }
 
@@ -94,27 +118,28 @@ public class GameManager : MonoBehaviour
             taskContent.text = " ";
         }
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 6; i++)
         {
             if (listCRList.CRLists[CRSerial].CRContentList[i] == "/") //  /说明没有任务
             {
-                update.getTaskBool(i, false);
+                update.setTaskBool(i, false);
+                update.finishState[i] = true;
             }
             else
             {
                 taskeach[taskSerialRecord].text = listCRList.CRLists[CRSerial].CRContentList[i];  //更新任务
                 taskSerialRecord++;
-                if (i > 0)
-                {
-                    update.getTaskBool(i, true); // 第一项并不是任务 而是标题 i>0时才是真正的任务 但是第一项一直保持false
-                }
-                else
-                    update.getTaskBool(i, false);
+                update.setTaskBool(i, true);
+                // if (i > 1)
+                // {
+                //     update.getTaskBool(i, true); // first two items are not tasks. Name+ serial number. keep false
+                // }
+                // else
+                //     update.getTaskBool(i, false);
 
                 update.getTotalTaskNum(taskSerialRecord); //不同文物的任务总数 最后一次更新的数值是可访问的最大序列号
             }
-
-
         }
+        sceneCheck = false;
     }
 }

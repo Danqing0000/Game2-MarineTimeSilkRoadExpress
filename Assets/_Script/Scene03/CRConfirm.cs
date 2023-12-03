@@ -11,15 +11,20 @@ public class CRConfirm : MonoBehaviour
     public void confirm()
     {
         //notice.text = "Is that what he/ she wants?";
-        if (CameraControl.ChoseSerial == GameManager.CRSerial)
-        {
-            Debug.Log("1");
+        // if (CameraControl.ChoseSerial == GameManager.CRSerial)
+        // {
+            //Debug.Log("1");
             SceneManager.LoadScene("Scene04Workspace");
             //myManager.taskUpload();
-        }
-        else
-        {
-            notice.text = "Doesn't match";
-        }
+        //}
+        // else
+        // {
+        //     notice.text = "Doesn't match";
+        // }
+    }
+
+    public void contentUpdate() 
+    {
+        notice.text = "Is that what he/ she wants?";
     }
 }

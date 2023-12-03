@@ -12,7 +12,7 @@ public class ProfileChange : MonoBehaviour
     public Image characterProfile;
     public TMP_Text Caller;
     // Start is called before the first frame update
-    public void Start()
+    public void profile()
     {
         characterProfile.sprite = character[GameManager.CRSerial];
         Caller.text = description[GameManager.CRSerial];

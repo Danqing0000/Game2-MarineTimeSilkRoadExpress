@@ -16,16 +16,42 @@ public class Dialog : MonoBehaviour
     public Image characterProfile;
     bool test = true;
 
+    public Dialog myDialog;
+
+    public List<string> goodFeedback;
+    public List<string> badFeedback;
+    public static bool feedback = false;
+
+    public GameObject dialogPanel;
+    public Button tryAgain;
+    public Button nextItem;
+    public GameObject feedbackPanel;
+    public bool newOne;
+
     public void start()
     {
         //print (CRRequirement[GameManager.CRSerial]);
         //Content.text = CRRequirement[GameManager.CRSerial];
+    }
+
+    public void Update()
+    {
+        //Debug.Log("Feedback" + feedback);
+        if ((GameManager.sceneCheck == true) && (feedback == true))
+        {
+            dialogPanel.SetActive(false);
+            feedbackDialog(GameManager.itemCheck);
+            feedback = false;
+            Debug.Log("Loading");
+        }
 
     }
 
-    public void dialogUpload()
+    public void dialogUpload()  //点击next按键之后才触发这个功能
     {
         currentContent = CRRequirement[GameManager.CRSerial]; //调取对应对话内容
+        dialogPanel.SetActive(true);
+        Debug.Log("Dialog upload");
         if (test == true)
         {
             for (int i = stopSerial; i < currentContent.Length; i++)
@@ -51,16 +77,38 @@ public class Dialog : MonoBehaviour
             if (stopSerial == currentContent.Length)
             {
                 stopSerial = 0;
-                test = false;
+                test = false; //控制不在结束对话的时候马上跳转到下个场景
+
                 Debug.Log("dialog finish. Change Scene.");
-                
+
             }
         }
         else
         {
+            dialogPanel.SetActive(false);
+            feedback = true;
             SceneManager.LoadScene("Scene03WarehouseBackup");
+
         }
-
-
     }
+
+    public void feedbackDialog(bool stat) //stat说明事正向反馈or负面反馈
+    {
+        feedbackPanel.SetActive(true);
+        nextItem.gameObject.SetActive(false);
+        tryAgain.gameObject.SetActive(false);
+        if (stat == true)
+        {
+            Content.text = goodFeedback[Random.Range(0, 3)]; // right item
+            nextItem.gameObject.SetActive(true);
+        }
+        else
+        {
+            Content.text = badFeedback[Random.Range(0, 3)]; // wrong item
+            tryAgain.gameObject.SetActive(true);
+        }
+    }
+
+
+
 }

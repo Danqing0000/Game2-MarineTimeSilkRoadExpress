@@ -70,7 +70,8 @@ public class nameConfirm : MonoBehaviour
         if (submitfinalState == true)
         {
             SceneManager.LoadScene("Scene02Reception"); //add waitforseconds
-            GameManager.sceneCheck = true;
+            GameManager.sceneCheck = true; //改变场景的同时 调用Game Manager中的代码，判断选择的文物是否正确? 限制是否需要重新更新任务
+            myManager.finalItemCheck();
         }
 
     }

@@ -223,7 +223,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1717789794232878686, guid: a273bb46989c74647b7c2cd7890d9c87, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1717789794232878686, guid: a273bb46989c74647b7c2cd7890d9c87, type: 3}
       propertyPath: m_LocalPosition.x
@@ -341,7 +341,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7070374244470689822, guid: feaa2460b2e543747985abd12dfc65d8, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7070374244470689822, guid: feaa2460b2e543747985abd12dfc65d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -682,6 +682,18 @@ MonoBehaviour:
       - m_Target: {fileID: 719621958}
         m_TargetAssemblyTypeName: CameraControl, Assembly-CSharp
         m_MethodName: OnMouseDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1814935120}
+        m_TargetAssemblyTypeName: CRConfirm, Assembly-CSharp
+        m_MethodName: contentUpdate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1200,7 +1212,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4819054759292356639, guid: ec89faba43d79724dad0ba50c211d9d6, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4819054759292356639, guid: ec89faba43d79724dad0ba50c211d9d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2114,7 +2126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7550358571254277637, guid: aecc667692378ef45a1cd05664415ef5, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7550358571254277637, guid: aecc667692378ef45a1cd05664415ef5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2218,8 +2230,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: random.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: taskeach.Array.size
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: random.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: random.Array.data[2]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: random.Array.data[3]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: random.Array.data[4]
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: taskeach.Array.data[0]

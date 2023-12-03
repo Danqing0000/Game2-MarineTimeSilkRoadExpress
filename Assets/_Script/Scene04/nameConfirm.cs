@@ -20,8 +20,8 @@ public class nameConfirm : MonoBehaviour
     public GameManager myManager;
     public void Start()
     {
-        idname.text = "Name: " + myManager.listCRList.CRLists[GameManager.CRSerial].CRContentList[0];
-        idnum.text = "ID Number: " + myManager.listCRList.CRLists[GameManager.CRSerial].CRContentList[1];
+        idname.text = "Name: " + myManager.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[0];
+        idnum.text = "ID Number: " + myManager.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[1];
 
     }
 
@@ -45,7 +45,7 @@ public class nameConfirm : MonoBehaviour
         // }
 
 
-        if ((nameInput.text == myManager.listCRList.CRLists[GameManager.CRSerial].CRContentList[0]) && (serialInput.text == myManager.listCRList.CRLists[GameManager.CRSerial].CRContentList[1]))
+        if ((nameInput.text == myManager.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[0]) && (serialInput.text == myManager.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[1]))
         {
             Debug.Log("ok");
             notice.text = "correct";
@@ -53,7 +53,7 @@ public class nameConfirm : MonoBehaviour
             submitfinalState = true;
             //SceneManager.LoadScene("Scene00Start");
         }
-        if ((nameInput.text != myManager.listCRList.CRLists[GameManager.CRSerial].CRContentList[0]) || (serialInput.text != myManager.listCRList.CRLists[GameManager.CRSerial].CRContentList[1]))
+        if ((nameInput.text != myManager.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[0]) || (serialInput.text != myManager.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[1]))
         {
             notice.text = "input wrong";
             Debug.Log("wrong");
@@ -72,6 +72,7 @@ public class nameConfirm : MonoBehaviour
             SceneManager.LoadScene("Scene02Reception"); //add waitforseconds
             GameManager.sceneCheck = true; //改变场景的同时 调用Game Manager中的代码，判断选择的文物是否正确? 限制是否需要重新更新任务
             myManager.finalItemCheck();
+            Debug.Log("final check called");
         }
 
     }

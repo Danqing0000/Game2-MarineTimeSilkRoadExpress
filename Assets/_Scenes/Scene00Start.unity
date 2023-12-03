@@ -1095,6 +1095,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559523931}
   m_CullTransparentMesh: 1
+--- !u!1001 &660697036
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1222693525610097224, guid: 85d178a5dfd91eb49b9568054e0ec9d6, type: 3}
+      propertyPath: m_Name
+      value: RandomSerial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222693525610097224, guid: 85d178a5dfd91eb49b9568054e0ec9d6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222693525610097226, guid: 85d178a5dfd91eb49b9568054e0ec9d6, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222693525610097226, guid: 85d178a5dfd91eb49b9568054e0ec9d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 424.12546
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222693525610097226, guid: 85d178a5dfd91eb49b9568054e0ec9d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 244.3686
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222693525610097226, guid: 85d178a5dfd91eb49b9568054e0ec9d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.409629
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222693525610097226, guid: 85d178a5dfd91eb49b9568054e0ec9d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222693525610097226, guid: 85d178a5dfd91eb49b9568054e0ec9d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222693525610097226, guid: 85d178a5dfd91eb49b9568054e0ec9d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222693525610097226, guid: 85d178a5dfd91eb49b9568054e0ec9d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222693525610097226, guid: 85d178a5dfd91eb49b9568054e0ec9d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222693525610097226, guid: 85d178a5dfd91eb49b9568054e0ec9d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222693525610097226, guid: 85d178a5dfd91eb49b9568054e0ec9d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85d178a5dfd91eb49b9568054e0ec9d6, type: 3}
 --- !u!1 &661720787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1967,8 +2028,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: myRandom
+      value: 
+      objectReference: {fileID: 1576844559}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: random.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: taskeach.Array.size
@@ -2494,6 +2559,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562915521}
   m_CullTransparentMesh: 1
+--- !u!1 &1576844556 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4749129707341629083, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+  m_PrefabInstance: {fileID: 1339878177}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1576844559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576844556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c50da983931bd4dbf697e9ecc50103, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRandom: {fileID: 1576844559}
+  random: 
 --- !u!1 &1593701412
 GameObject:
   m_ObjectHideFlags: 0

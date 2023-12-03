@@ -25,13 +25,17 @@ public class GameManager : MonoBehaviour
     public static bool sceneCheck = true;
 
     public List<int> random;
-    public Dialog myDialog;
+    //public Dialog myDialog;
     public static int finishedItem = 0; //完成邮寄的文物数量
     public static bool itemCheck; //当前邮寄的物品是否正确
 
-    public GameObject scroingPage;
+    GameObject scroingPage;
     public static bool autoAdd = true;
-
+    public static bool compare = false;
+    public static bool scoring = false;
+    public static int index = 0;
+    public RandomSerialNum myRandom; //?
+    
 
     [System.Serializable]
     public class CRs //定义一个新的类 CRs是一个内容为字符串的列表
@@ -63,7 +67,7 @@ public class GameManager : MonoBehaviour
             myGameManager = this;
         // else if (myGameManager != this)
         //     Destroy(gameObject);
-        // DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
         //Debug.Log(this.gameObject.name);
         //RandomChar();
         //RandomCR();
@@ -81,77 +85,77 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
-        if ((SceneManager.GetActiveScene().name == "Scene04Workspace") && (sceneCheck == true))
-        {
-            taskUpload();
-            Debug.Log("task uploaded");
-        }
 
-        // for (int n = 0; n < 5; n++)    //  Populate list
+        // if ((SceneManager.GetActiveScene().name == "Scene04Workspace") && (sceneCheck == true))
         // {
-        //     random.Clear();
-        //     random.Add(n);
-
+        //     taskUpload();
+        //     Debug.Log("task uploaded");
         // }
 
-        if ((SceneManager.GetActiveScene().name == "Scene02Reception") && (autoAdd == true))
+        if ((SceneManager.GetActiveScene().name == "Scene02Reception"))
         {
-            for (int n = 0; n < 5; n++)    //  Populate list
-            {
-                //random.Clear();
-                random.Add(n);
-            }
-            RandomCR();
-            autoAdd = false;
+            // for (int n = 0; n < 5; n++)    //  Populate list
+            // {
+            //     //random.Clear();
+            //     random.Add(n);
+            // }
             Debug.Log("random CR automatically");
         }
         Debug.Log("Autoadd " + autoAdd);
         Debug.Log("start function running now");
 
+        // if ((scoring == true) && (SceneManager.GetActiveScene().name == "Scene02Reception"))
+        //     scroingPage = GameObject.Find("ScoringPage");
+        //     scroingPage.SetActive(true);
+
+        //myRandom.currentSerial();
+        Debug.Log(CRSerial);
     }
 
-    // public void RandomChar()
-    // {
-    //     RandomCharacter[CharSerial].SetActive(false); //hide original characters
-    //     CharSerial = Random.Range(0, 5);
-    //     Debug.Log("CharSerial=" + CharSerial);
-    //     RandomCharacter[CharSerial].SetActive(true); //show new characters
-
-    // }
-    public void firstRandom()
-    {
-        if (autoAdd == true)
-        {
-            for (int n = 0; n < 5; n++)    //  Populate list
-            {
-                random.Clear();
-                random.Add(n);
-            }
-            RandomCR();
-            autoAdd = false;
-        }
-    }
-
-    public void RandomCR()
+    public void RandomCR() //生成一个不重复的随机数序列
     {
         // delete CR after using.
         // use List.length shrink the range of random serial number
 
         //CRSerial = Random.Range(0, 5);
-        int index = Random.Range(0, random.Count - 1);    //  Pick random element from the list
-        CRSerial = random[index];    //  the number that was randomly picked
-        random.RemoveAt(index);   //  Remove chosen element
+        // int index = Random.Range(0, random.Count - 1);    //  Pick random element from the list
+        // CRSerial = random[index];    //  the number that was randomly picked
+        // random.RemoveAt(index);   //  Remove chosen element
 
 
+
+        // Debug.Log("index=" + index);
+        // if (SceneManager.GetActiveScene().name == "Scene04Workspace")
+        //     CRObjectList[CRSerial].SetActive(false); //hide original characters
+
+        bool allowtoAdd = false;
+        int n = 0;
+        // for (int n = 0; n < 5; n++)    //  Populate list
+        // {
+        while (n < 5)
+        {
+            //Debug.Log("n is " + n);
+            allowtoAdd = true;
+            int t = Random.Range(0, 5);
+            //Debug.Log("t is " + t);
+            foreach (int num in random)
+            {
+                if (num == t)
+                {
+                    //Debug.Log("populate again");
+                    allowtoAdd = false;
+                    break;
+                }
+            }
+            if (allowtoAdd == true)
+            {
+                //Debug.Log("n is " + n + "now");
+                random.Add(t);
+                n = n + 1;
+            }
+
+        }
         Debug.Log("CRSerial=" + CRSerial);
-        Debug.Log("index=" + index);
-        //CRObjectList.RemoveAt(CRSerial);
-
-        //Debug.Log(CRObjectList[CRSerial].name);
-        //Debug.Log(CRContentList[CRSerial]);
-        //Debug.Log(listCRList.CRLists[CRSerial].CRContentList[2]);
-        if (SceneManager.GetActiveScene().name == "Scene04Workspace")
-            CRObjectList[CRSerial].SetActive(false); //hide original characters
 
     }
 
@@ -198,9 +202,9 @@ public class GameManager : MonoBehaviour
     public void finalItemCheck()  //用于进行最终判断，如果文物选择的不正确，将会收到负面反馈
     {
         Debug.Log("Right one " + CRSerial + "/ you chose " + CameraControl.ChoseSerial);
-        if (finishedItem != 5)  //文物上限是5
+        if (finishedItem < 5)  //文物上限是5 只允许0 1 2 3 4
         {
-            if (CRSerial == CameraControl.ChoseSerial)
+            if ((CRSerial == CameraControl.ChoseSerial))
             {
                 Debug.Log("Congratulation!");
                 Debug.Log(sceneCheck);
@@ -208,23 +212,46 @@ public class GameManager : MonoBehaviour
                 //myDialog.feedbackDialog(true);
                 finishedItem = finishedItem + 1;
                 Debug.Log("finished item " + finishedItem);
+                TaskUpload.allowtoAdd = true;
+
+                if (finishedItem == 5)
+                {
+                    scoring = true;
+                    //scroingPage.SetActive(true);
+                    autoAdd = false;
+                }
+                else
+                {
+                    Debug.Log(RandomSerialNum.index);
+                    RandomSerialNum.index = RandomSerialNum.index + 1;
+                    myRandom.currentSerial();
+                    //CRSerial = myRandom.currentSerial();
+                    Debug.Log("index = " + RandomSerialNum.index);
+                    Debug.Log("CRSerial=" + CRSerial);
+                }
+                //compare = false; //用来限制是否需要比较选择序列号和文物序列号，若选择正确，则通过compare=false来限制不走elseif
                 //autoAdd = true;
-                RandomCR();
+                //RandomCR();  //改了random之后文物序列号已经变了 但是选择序列号还没变，所以会直接走else语句 所以会在选对后马上出现选错的提示
+
                 //myDialog.dialogUpload();
             }
-            else
+            else if ((CRSerial != CameraControl.ChoseSerial))
             {
                 itemCheck = false;
                 //myDialog.feedbackDialog(false);
+                TaskUpload.allowtoAdd = true;
                 Debug.Log("you choose the wrong item！");
                 Debug.Log(sceneCheck);
             }
         }
         else  //寄出了所有的文物
         {
-            scroingPage.SetActive(true);
+            scoring = true;
+            //scroingPage.SetActive(true);
             autoAdd = false;
         }
+        TaskUpload.allowtoAdd = true;
+        Debug.Log("TaskUpload " + TaskUpload.allowtoAdd);
 
     }
 }

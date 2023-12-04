@@ -2033,7 +2033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &562624970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2060,6 +2060,7 @@ MonoBehaviour:
   - {fileID: 1430593372}
   - {fileID: 1951029725}
   update: {fileID: 368187795}
+  myUpload: {fileID: 562624970}
   listCRList:
     CRLists:
     - CRContentList:
@@ -5586,6 +5587,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: taskeach.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: random.Array.data[0]
       value: 0
       objectReference: {fileID: 0}
@@ -5608,27 +5613,31 @@ PrefabInstance:
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: taskeach.Array.data[0]
       value: 
-      objectReference: {fileID: 992082857}
+      objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: taskeach.Array.data[1]
       value: 
-      objectReference: {fileID: 1857324007}
+      objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: taskeach.Array.data[2]
       value: 
-      objectReference: {fileID: 269565192}
+      objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: taskeach.Array.data[3]
       value: 
-      objectReference: {fileID: 1484576277}
+      objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: taskeach.Array.data[4]
       value: 
-      objectReference: {fileID: 1430593372}
+      objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: taskeach.Array.data[5]
       value: 
       objectReference: {fileID: 1951029725}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: CRObjectList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: CRObjectList.Array.data[0]
       value: 
@@ -15249,7 +15258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2061804324374879460, guid: a273bb46989c74647b7c2cd7890d9c87, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a273bb46989c74647b7c2cd7890d9c87, type: 3}
@@ -42125,7 +42134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5694078899224195040, guid: 6bfbab151af46374ab012b2e358f12fe, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfbab151af46374ab012b2e358f12fe, type: 3}
@@ -43138,7 +43147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5308451390034973349, guid: ec89faba43d79724dad0ba50c211d9d6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec89faba43d79724dad0ba50c211d9d6, type: 3}
@@ -60099,6 +60108,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7589923572513983140, guid: feaa2460b2e543747985abd12dfc65d8, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7589923572513983140, guid: feaa2460b2e543747985abd12dfc65d8, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -65357,7 +65370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7170737421949058239, guid: aecc667692378ef45a1cd05664415ef5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7550358571254277637, guid: aecc667692378ef45a1cd05664415ef5, type: 3}
       propertyPath: m_RootOrder

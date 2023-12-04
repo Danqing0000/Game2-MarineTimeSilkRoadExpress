@@ -53,8 +53,8 @@ public class RandomSerialNum : MonoBehaviour
 
     public void currentSerial()
     {
-        CRnum = random[index];
-        GameManager.CRSerial = CRnum;
+        //CRnum = random[index];
+        //GameManager.CRSerial = CRnum;
         Debug.Log("GameManager.CRSerial changed to: " + GameManager.CRSerial);
         
         //return CRnum;

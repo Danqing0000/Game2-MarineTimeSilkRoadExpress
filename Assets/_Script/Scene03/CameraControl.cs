@@ -27,5 +27,7 @@ public class CameraControl : MonoBehaviour
         file.sprite = fileList[CameraControl.ChoseSerial];
         pic.sprite = picList[CameraControl.ChoseSerial];
         note.sprite = noteList[CameraControl.ChoseSerial];
+        GameManager.AddList = true;
+        GameManager.sceneCheck = true;
     }
 }

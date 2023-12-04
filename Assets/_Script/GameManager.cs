@@ -4,20 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 
 
 public class GameManager : MonoBehaviour
 {
     public TaskUpdate update;
     public static GameManager myGameManager;
-    //public List<GameObject> RandomCharacter;
     public List<GameObject> CRObjectList; //contain all the antiques
-                                          //public List<List<string>> CRContentList;
-                                          // public List<string> Cube; //contain all the requirements(reception scene), reference(warehouse scene), tasks(workspace scene)
-                                          // public List<string> Sphere; //same as above, name of the lisr = name of the GameObject
-                                          // public List<string> Cylinder;
-                                          // public List<string> Capsule;
-
     public List<TMP_Text> taskeach;
     public static int CharSerial;
     public static int CRSerial;
@@ -35,7 +29,8 @@ public class GameManager : MonoBehaviour
     public static bool scoring = false;
     public static int index = 0;
     public RandomSerialNum myRandom; //?
-    
+    public static bool AddList = true;
+
 
     [System.Serializable]
     public class CRs //定义一个新的类 CRs是一个内容为字符串的列表
@@ -67,40 +62,44 @@ public class GameManager : MonoBehaviour
             myGameManager = this;
         // else if (myGameManager != this)
         //     Destroy(gameObject);
+
         DontDestroyOnLoad(gameObject);
-        //Debug.Log(this.gameObject.name);
-        //RandomChar();
         //RandomCR();
     }
 
     public void Update()
     {
-        // if ((SceneManager.GetActiveScene().name == "Scene04Workspace") && (sceneCheck == true))
-        // {
-        //     taskUpload();
-        //     Debug.Log("task uploaded");
-        // }
 
     }
 
     public void Start()
     {
-
-        // if ((SceneManager.GetActiveScene().name == "Scene04Workspace") && (sceneCheck == true))
-        // {
-        //     taskUpload();
-        //     Debug.Log("task uploaded");
-        // }
-
-        if ((SceneManager.GetActiveScene().name == "Scene02Reception"))
+        if ((SceneManager.GetActiveScene().name == "Scene04Workspace") && (AddList == true))
         {
-            // for (int n = 0; n < 5; n++)    //  Populate list
-            // {
-            //     //random.Clear();
-            //     random.Add(n);
-            // }
-            Debug.Log("random CR automatically");
+            taskeach.Clear();
+            CRObjectList.Clear();
+            taskeach.Add(GameObject.Find("Task Title").GetComponent<TMP_Text>());
+            taskeach.Add(GameObject.Find("TaskID").GetComponent<TMP_Text>());
+            taskeach.Add(GameObject.Find("Task1").GetComponent<TMP_Text>());
+            taskeach.Add(GameObject.Find("Task2").GetComponent<TMP_Text>());
+            taskeach.Add(GameObject.Find("Task3").GetComponent<TMP_Text>());
+            taskeach.Add(GameObject.Find("Task4").GetComponent<TMP_Text>());
+
+            CRObjectList.Add(GameObject.Find("Bag"));
+            CRObjectList.Add(GameObject.Find("Coin"));
+            CRObjectList.Add(GameObject.Find("Compass"));
+            CRObjectList.Add(GameObject.Find("Dish"));
+            CRObjectList.Add(GameObject.Find("Fan"));
+
+            Debug.Log("find");
+            AddList = false;
         }
+        if ((SceneManager.GetActiveScene().name == "Scene04Workspace") && (sceneCheck == true))
+        {
+            taskUpload();
+            Debug.Log("task uploaded");
+        }
+
         Debug.Log("Autoadd " + autoAdd);
         Debug.Log("start function running now");
 
@@ -114,20 +113,6 @@ public class GameManager : MonoBehaviour
 
     public void RandomCR() //生成一个不重复的随机数序列
     {
-        // delete CR after using.
-        // use List.length shrink the range of random serial number
-
-        //CRSerial = Random.Range(0, 5);
-        // int index = Random.Range(0, random.Count - 1);    //  Pick random element from the list
-        // CRSerial = random[index];    //  the number that was randomly picked
-        // random.RemoveAt(index);   //  Remove chosen element
-
-
-
-        // Debug.Log("index=" + index);
-        // if (SceneManager.GetActiveScene().name == "Scene04Workspace")
-        //     CRObjectList[CRSerial].SetActive(false); //hide original characters
-
         bool allowtoAdd = false;
         int n = 0;
         // for (int n = 0; n < 5; n++)    //  Populate list
@@ -212,7 +197,7 @@ public class GameManager : MonoBehaviour
                 //myDialog.feedbackDialog(true);
                 finishedItem = finishedItem + 1;
                 Debug.Log("finished item " + finishedItem);
-                TaskUpload.allowtoAdd = true;
+                //TaskUpload.allowtoAdd = true;
 
                 if (finishedItem == 5)
                 {
@@ -223,9 +208,12 @@ public class GameManager : MonoBehaviour
                 else
                 {
                     Debug.Log(RandomSerialNum.index);
+                    index = index + 1;
+                    CRSerial = random[index];
                     RandomSerialNum.index = RandomSerialNum.index + 1;
-                    myRandom.currentSerial();
-                    //CRSerial = myRandom.currentSerial();
+                    //myRandom.currentSerial();
+                    //CRSerial = myRandom.currentSerial(); // why it can't be called??????????? WTF??/???!?!?!?!?!?!??!?!
+                    // you died or still sleeping????????
                     Debug.Log("index = " + RandomSerialNum.index);
                     Debug.Log("CRSerial=" + CRSerial);
                 }
@@ -239,7 +227,7 @@ public class GameManager : MonoBehaviour
             {
                 itemCheck = false;
                 //myDialog.feedbackDialog(false);
-                TaskUpload.allowtoAdd = true;
+                //TaskUpload.allowtoAdd = true;
                 Debug.Log("you choose the wrong item！");
                 Debug.Log(sceneCheck);
             }
@@ -250,7 +238,8 @@ public class GameManager : MonoBehaviour
             //scroingPage.SetActive(true);
             autoAdd = false;
         }
-        TaskUpload.allowtoAdd = true;
+        //TaskUpload.allowtoAdd = true;
+        
         Debug.Log("TaskUpload " + TaskUpload.allowtoAdd);
 
     }

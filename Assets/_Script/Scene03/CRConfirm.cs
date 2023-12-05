@@ -15,6 +15,8 @@ public class CRConfirm : MonoBehaviour
         // {
             //Debug.Log("1");
             SceneManager.LoadScene("Scene04Workspace");
+            TaskUpload.allowtoAdd = true;
+            Debug.Log("Camera control changed addlist to " + TaskUpload.allowtoAdd);
             //myManager.taskUpload();
         //}
         // else

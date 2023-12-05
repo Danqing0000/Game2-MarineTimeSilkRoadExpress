@@ -7,6 +7,7 @@ public class ObjecttoPanel : MonoBehaviour
 {
     public GameObject panelPage;
     public TaskUpdate myUpdate;
+    public GameObject next;
 
     void OnMouseDown()
     {
@@ -21,6 +22,11 @@ public class ObjecttoPanel : MonoBehaviour
         else if ((this.name != "package") && (this.name != "palette"))
         {
             panelPage.SetActive(true);
+        }
+        else if (this.name == "model") // telephone
+        {
+            panelPage.SetActive(true);
+            next.SetActive(true);
         }
         
         

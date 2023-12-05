@@ -22,11 +22,12 @@ public class Dialog : MonoBehaviour
     public List<string> badFeedback;
     public static bool feedback = false;
 
+    public GameObject dialogAll;
     public GameObject dialogPanel;
     public Button tryAgain;
     public Button nextItem;
-    public GameObject feedbackPanel;
-    public bool newOne;
+    public Button nextSentence;
+    public static bool openFeedbackPanel = false;
 
     public void start()
     {
@@ -36,10 +37,10 @@ public class Dialog : MonoBehaviour
 
     public void Update()
     {
-        //Debug.Log("Feedback" + feedback);
+        Debug.Log("Feedback" + feedback);
         if ((GameManager.sceneCheck == true) && (feedback == true))
         {
-            dialogPanel.SetActive(false);
+            //dialogPanel.SetActive(false);
             feedbackDialog(GameManager.itemCheck);
             feedback = false;
             Debug.Log("Loading");
@@ -50,7 +51,10 @@ public class Dialog : MonoBehaviour
     public void dialogUpload()  //点击next按键之后才触发这个功能
     {
         currentContent = CRRequirement[GameManager.CRSerial]; //调取对应对话内容
-        dialogPanel.SetActive(true);
+        //dialogPanel.SetActive(true);
+        dialogPanel.GetComponent<CanvasGroup>().alpha = 1;
+        dialogPanel.GetComponent<CanvasGroup>().interactable = false;
+        dialogPanel.GetComponent<CanvasGroup>().blocksRaycasts = false;
         Debug.Log("Dialog upload");
         if (test == true)
         {
@@ -66,7 +70,7 @@ public class Dialog : MonoBehaviour
                     Content.text = sentence;
                     sentence = "";
                     //Debug.Log(i);
-                    //Debug.Log(sentence);
+                    Debug.Log(sentence);
                     stopSerial = i + 1;
                     //Debug.Log(stopSerial);
                     //Debug.Log("length"+currentContent.Length);
@@ -83,9 +87,12 @@ public class Dialog : MonoBehaviour
 
             }
         }
-        else
+        else // finish upload dialog
         {
-            dialogPanel.SetActive(false);
+            dialogAll.SetActive(false);
+            dialogPanel.GetComponent<CanvasGroup>().alpha = 0;
+            dialogPanel.GetComponent<CanvasGroup>().interactable = false;
+            dialogPanel.GetComponent<CanvasGroup>().blocksRaycasts = false;
             feedback = true;
             SceneManager.LoadScene("Scene03WarehouseBackup");
 
@@ -94,9 +101,10 @@ public class Dialog : MonoBehaviour
 
     public void feedbackDialog(bool stat) //stat说明事正向反馈or负面反馈
     {
-        feedbackPanel.SetActive(true);
+        openFeedbackPanel = true;
         nextItem.gameObject.SetActive(false);
         tryAgain.gameObject.SetActive(false);
+        nextSentence.gameObject.SetActive(false);
         if (stat == true)
         {
             Content.text = goodFeedback[Random.Range(0, 3)]; // right item

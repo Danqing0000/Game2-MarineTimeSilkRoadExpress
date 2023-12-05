@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public List<GameObject> CRObjectList; //contain all the antiques
     public List<TMP_Text> taskeach;
     public static int CharSerial;
-    public static int CRSerial;
+    public static int CRSerial = 0;
     //public static int taskTotal;
     public static bool sceneCheck = true;
 
@@ -23,13 +23,14 @@ public class GameManager : MonoBehaviour
     public static int finishedItem = 0; //完成邮寄的文物数量
     public static bool itemCheck; //当前邮寄的物品是否正确
 
-    GameObject scroingPage;
+    public GameObject scroingPage;
     public static bool autoAdd = true;
     public static bool compare = false;
     public static bool scoring = false;
     public static int index = 0;
     public RandomSerialNum myRandom; //?
     public static bool AddList = true;
+    
 
 
     [System.Serializable]
@@ -64,12 +65,18 @@ public class GameManager : MonoBehaviour
         //     Destroy(gameObject);
 
         DontDestroyOnLoad(gameObject);
-        //RandomCR();
+        // RandomCR();
+        // CRSerial = random[index];
     }
 
     public void Update()
     {
-
+        // if ((SceneManager.GetActiveScene().name == "Scene02Reception") && (scoring == true))
+        // {
+        //     scroingPage = GameObject.Find("ScoringPage");
+        //     scroingPage.SetActive(true);
+        //     scoring = false;
+        // }
     }
 
     public void Start()
@@ -103,9 +110,11 @@ public class GameManager : MonoBehaviour
         Debug.Log("Autoadd " + autoAdd);
         Debug.Log("start function running now");
 
-        // if ((scoring == true) && (SceneManager.GetActiveScene().name == "Scene02Reception"))
-        //     scroingPage = GameObject.Find("ScoringPage");
-        //     scroingPage.SetActive(true);
+        if ((SceneManager.GetActiveScene().name == "Scene02Reception") && (scoring == true))
+        {
+            scroingPage = GameObject.Find("ScoringPage");
+            scroingPage.SetActive(true);
+        }
 
         //myRandom.currentSerial();
         Debug.Log(CRSerial);
@@ -187,7 +196,7 @@ public class GameManager : MonoBehaviour
     public void finalItemCheck()  //用于进行最终判断，如果文物选择的不正确，将会收到负面反馈
     {
         Debug.Log("Right one " + CRSerial + "/ you chose " + CameraControl.ChoseSerial);
-        if (finishedItem < 5)  //文物上限是5 只允许0 1 2 3 4
+        if (finishedItem < 2)  //文物上限是5 只允许0 1 2 3 4
         {
             if ((CRSerial == CameraControl.ChoseSerial))
             {
@@ -199,7 +208,7 @@ public class GameManager : MonoBehaviour
                 Debug.Log("finished item " + finishedItem);
                 //TaskUpload.allowtoAdd = true;
 
-                if (finishedItem == 5)
+                if (finishedItem == 2)
                 {
                     scoring = true;
                     //scroingPage.SetActive(true);
@@ -208,14 +217,15 @@ public class GameManager : MonoBehaviour
                 else
                 {
                     Debug.Log(RandomSerialNum.index);
-                    index = index + 1;
-                    CRSerial = random[index];
-                    RandomSerialNum.index = RandomSerialNum.index + 1;
+                    // index = index + 1;
+                    // CRSerial = random[index];
+                    CRSerial = CRSerial + 1;
+                    //RandomSerialNum.index = RandomSerialNum.index + 1;
                     //myRandom.currentSerial();
-                    //CRSerial = myRandom.currentSerial(); // why it can't be called??????????? WTF??/???!?!?!?!?!?!??!?!
-                    // you died or still sleeping????????
+                    //CRSerial = myRandom.currentSerial(); 
                     Debug.Log("index = " + RandomSerialNum.index);
                     Debug.Log("CRSerial=" + CRSerial);
+                    Debug.Log("index number = " + random[index]);
                 }
                 //compare = false; //用来限制是否需要比较选择序列号和文物序列号，若选择正确，则通过compare=false来限制不走elseif
                 //autoAdd = true;
@@ -239,7 +249,7 @@ public class GameManager : MonoBehaviour
             autoAdd = false;
         }
         //TaskUpload.allowtoAdd = true;
-        
+
         Debug.Log("TaskUpload " + TaskUpload.allowtoAdd);
 
     }

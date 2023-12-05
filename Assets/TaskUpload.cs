@@ -28,6 +28,7 @@ public class TaskUpload : MonoBehaviour
     public void Update()
     {
         //Debug.Log("this is task upload");
+        //Debug.Log(allowtoAdd);
         if ((allowtoAdd == true) && (SceneManager.GetActiveScene().name == "Scene04Workspace"))
         {
             taskUpload();
@@ -39,6 +40,7 @@ public class TaskUpload : MonoBehaviour
 
     public void taskUpload()
     {
+        
         foreach (GameObject item in CRObjectList)
         {
             item.SetActive(false);
@@ -66,5 +68,6 @@ public class TaskUpload : MonoBehaviour
                 update.getTotalTaskNum(taskSerialRecord); //不同文物的任务总数 最后一次更新的数值是可访问的最大序列号
             }
         }
+        Debug.Log("Task updated already");
     }
 }

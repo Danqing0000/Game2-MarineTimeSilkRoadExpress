@@ -2109,7 +2109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: listCRList.CRLists.Array.data[0].CRContentList.Array.data[1]
-      value: 1122
+      value: 751AD
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: listCRList.CRLists.Array.data[0].CRContentList.Array.data[2]
@@ -2129,7 +2129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: listCRList.CRLists.Array.data[1].CRContentList.Array.data[1]
-      value: 234
+      value: 1105AD
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: listCRList.CRLists.Array.data[1].CRContentList.Array.data[3]
@@ -2141,7 +2141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: listCRList.CRLists.Array.data[2].CRContentList.Array.data[1]
-      value: 345
+      value: 750AD
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: listCRList.CRLists.Array.data[2].CRContentList.Array.data[3]
@@ -2157,7 +2157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: listCRList.CRLists.Array.data[3].CRContentList.Array.data[1]
-      value: 2233
+      value: 1135AD
       objectReference: {fileID: 0}
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: listCRList.CRLists.Array.data[3].CRContentList.Array.data[2]
@@ -2166,6 +2166,10 @@ PrefabInstance:
     - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
       propertyPath: listCRList.CRLists.Array.data[3].CRContentList.Array.data[3]
       value: Repair
+      objectReference: {fileID: 0}
+    - target: {fileID: 6193657534332638624, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}
+      propertyPath: listCRList.CRLists.Array.data[4].CRContentList.Array.data[1]
+      value: 34BD
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4469fc8bb70733e4d89ebab22beb317c, type: 3}

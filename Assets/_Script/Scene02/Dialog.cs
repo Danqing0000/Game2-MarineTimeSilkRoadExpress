@@ -37,7 +37,7 @@ public class Dialog : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log("Feedback" + feedback);
+        //Debug.Log("Feedback" + feedback);
         if ((GameManager.sceneCheck == true) && (feedback == true))
         {
             //dialogPanel.SetActive(false);

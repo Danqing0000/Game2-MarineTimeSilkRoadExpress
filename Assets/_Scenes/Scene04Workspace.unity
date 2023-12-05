@@ -2064,36 +2064,36 @@ MonoBehaviour:
   listCRList:
     CRLists:
     - CRContentList:
-      - Spice
-      - 1122
+      - Sandalwood
+      - 751AD
       - /
       - /
       - /
       - Deliver
     - CRContentList:
-      - Coin
-      - 234
+      - Chong Ning Zhong Bao Coin
+      - 1105AD
       - /
       - /
       - Polish
       - Deliver
     - CRContentList:
       - Compass
-      - 2233
+      - 750AD
       - /
       - Repair
       - Polish
       - Deliver
     - CRContentList:
-      - Dish
-      - 2233
+      - Dish with Sailing-ship Design
+      - 1135AD
       - Color
       - Repair
       - Polish
       - Deliver
     - CRContentList:
-      - Fan
-      - 456
+      - Chinese Dragon Fan
+      - 34BD
       - Color
       - Repair
       - Polish
@@ -2553,6 +2553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelPage: {fileID: 1635337613}
   myUpdate: {fileID: 368187795}
+  next: {fileID: 0}
 --- !u!64 &684439539
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7261,6 +7262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelPage: {fileID: 1324457430}
   myUpdate: {fileID: 368187795}
+  next: {fileID: 0}
 --- !u!64 &2075763162
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17333,6 +17335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelPage: {fileID: 1635337613}
   myUpdate: {fileID: 0}
+  next: {fileID: 0}
 --- !u!64 &1473515283053603344
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25509,6 +25512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelPage: {fileID: 1324457430}
   myUpdate: {fileID: 0}
+  next: {fileID: 0}
 --- !u!1 &2566010781918700264
 GameObject:
   m_ObjectHideFlags: 0

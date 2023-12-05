@@ -358,8 +358,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 16}
-  m_SizeDelta: {x: 433.4, y: 50}
+  m_AnchoredPosition: {x: 0, y: 40.3}
+  m_SizeDelta: {x: 196.7, y: 94.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &158769424
 MonoBehaviour:
@@ -408,8 +408,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 26.4
+  m_fontSizeBase: 26.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -493,8 +493,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 73.6374, y: -6.7581}
-  m_SizeDelta: {x: 528.5748, y: 48.2162}
+  m_AnchoredPosition: {x: 58.8, y: 32.8}
+  m_SizeDelta: {x: 472.2, y: 39.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &209156790
 MonoBehaviour:
@@ -527,8 +527,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -630,7 +630,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -48, y: 44}
+  m_AnchoredPosition: {x: -36.30002, y: 92.89999}
   m_SizeDelta: {x: 283, y: 32.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &215354966
@@ -662,8 +662,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4293256677
-  m_fontColor: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -832,13 +832,14 @@ RectTransform:
   - {fileID: 745891621}
   - {fileID: 215354965}
   - {fileID: 209156789}
+  - {fileID: 903579999}
   m_Father: {fileID: 1983829728}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000015258789}
-  m_SizeDelta: {x: 731.2, y: 175.3}
+  m_AnchoredPosition: {x: 0, y: -56.8}
+  m_SizeDelta: {x: 731.2, y: 354.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264449818
 MonoBehaviour:
@@ -853,15 +854,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d159b9f83910443408dc45d38729c144, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -920,8 +921,8 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.98312914, b: 0.645283, a: 1}
   m_Intensity: 3.32
-  m_Range: 31.1
-  m_SpotAngle: 35.566635
+  m_Range: 28.35328
+  m_SpotAngle: 50.03733
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -976,14 +977,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329977384}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.6, y: 33.5, z: 6.26}
+  m_LocalRotation: {x: 0.6363269, y: -0, z: -0, w: 0.7714195}
+  m_LocalPosition: {x: 0.38, y: 26.41, z: 2.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 79.037, y: 0, z: 0}
 --- !u!1 &446117780
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,7 +1247,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 158769423}
   - {fileID: 1273935888}
@@ -1255,8 +1256,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 569, y: 326.3}
+  m_AnchoredPosition: {x: 0, y: -31}
+  m_SizeDelta: {x: 435.4, y: 568.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &582490085
 MonoBehaviour:
@@ -1278,8 +1279,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 49f503f26984e0d46be20eb2820cded2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1454,7 +1455,7 @@ RectTransform:
   m_Children:
   - {fileID: 795238655}
   m_Father: {fileID: 1983829728}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1639,8 +1640,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 34, y: 0}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchoredPosition: {x: 36.9, y: 61.1}
+  m_SizeDelta: {x: 160, y: 120}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &745891622
 MonoBehaviour:
@@ -1655,15 +1656,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.2784314}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1693,19 +1694,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character:
-  - {fileID: 21300000, guid: ea37caa0293ea554fa47fe2629b8d76b, type: 3}
-  - {fileID: 21300000, guid: 95b32efa55dc1a641abca261ff1faa16, type: 3}
-  - {fileID: 21300000, guid: ff4e7662e17929e44a80124cf71623ab, type: 3}
-  - {fileID: 21300000, guid: ab95d26f66257064a89ec0d0700577af, type: 3}
-  - {fileID: 21300000, guid: ad3ced8ca3b59514fb9a755174188d27, type: 3}
+  - {fileID: 21300000, guid: 4a871229f3462a7419d42ecb67ed4e19, type: 3}
+  - {fileID: 21300000, guid: 6c7663a5d4471ec449ed0a59dfc3ca76, type: 3}
+  - {fileID: 21300000, guid: 8479d111b378a934f81f058690ebc945, type: 3}
+  - {fileID: 21300000, guid: 6c7663a5d4471ec449ed0a59dfc3ca76, type: 3}
+  - {fileID: 21300000, guid: 664ba3cd32a10b741aea17cc914c3ba4, type: 3}
   description:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
+  - "R\u014Dben"
+  - Mohamed Barre
+  - Severin
+  - Madmen Hassan
+  - Ptolemy
+  callingPlace:
+  - '[Calling from: Todaiji Temple, Heijo Kyo, Japan]'
+  - '[Calling from: Bakara Market, Mogadishu, Somalia]'
+  - '[Calling from: Massiqat, Oman]'
+  - '[Calling from: Cairo, Egypt]'
+  - '[calling from: Alexandria, Egypt]'
   characterProfile: {fileID: 745891622}
   Caller: {fileID: 215354966}
+  Place: {fileID: 903580000}
 --- !u!4 &766329524 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e4dbf8f7197743d48b9cfba56794e048, type: 3}
@@ -1744,7 +1752,7 @@ RectTransform:
   m_Children:
   - {fileID: 1146892587}
   m_Father: {fileID: 1983829728}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2139,6 +2147,141 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 62.805, y: -30, z: 0}
+--- !u!1 &903579998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 903579999}
+  - component: {fileID: 903580001}
+  - component: {fileID: 903580000}
+  m_Layer: 5
+  m_Name: CallingFrom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &903579999
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903579998}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 264449817}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -58.80002, y: 71.59998}
+  m_SizeDelta: {x: 238.85, y: 19}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &903580000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903579998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 9.8
+  m_fontSizeBase: 9.8
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &903580001
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903579998}
+  m_CullTransparentMesh: 1
 --- !u!1001 &962167675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2584,7 +2727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -83}
+  m_AnchoredPosition: {x: 0, y: -47.5}
   m_SizeDelta: {x: 170.6, y: 42.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1273935889
@@ -3176,10 +3319,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 264449817}
   - {fileID: 744390200}
   - {fileID: 780733340}
   - {fileID: 2111270165}
-  - {fileID: 264449817}
   m_Father: {fileID: 446117784}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3472,11 +3615,11 @@ RectTransform:
   m_Children:
   - {fileID: 1736433264}
   m_Father: {fileID: 1983829728}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 263, y: -63}
+  m_AnchoredPosition: {x: 219.3, y: -56.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2111270166
@@ -3598,29 +3741,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CRRequirement:
-  - I am a monk from Japan who admires Chinese Buddhism. /We once used an object
+  - 'I am a monk from Japan who admires Chinese Buddhism. /We once used an object
     that was burned to ashes and placed in a furnace to purify the air and to aid
     meditation. /I think it has helped my mental state tremendously and I want to
     get my hands on some more of this amazing incendiary substance. /Can you help
-    me? /
-  - I live in Mogadishu, Somalia, Africa. /Maritime traders from China once brought
-    us many round things with square holes in the middle. /I can trade it for food
-    and clothes, it even works between multiple tribes around me. /I need more of
-    these round things, can you help me? /
-  - I come from Masqat, the capital of Oman. /My ancestor Sinbad sailed from Arabia
-    to China in 800 AD. /Now I want to follow in his footsteps and set off from my
-    hometown again to reach China. /I built an antique wooden boat and now I have
-    everything I need, but I am still missing one of the most important things in
-    sailing without which I cannot travel. /Can you help me? /
-  - I am an Arab businessman living in Guangzhou. Recently, the leader of our business
-    group, Sheikh Abdullah, is returning from overseas. /I heard that you have many
-    treasures here, especially the items with beautiful patterns but very fragile.
-    /I want to choose some to give to my relatives in my hometown. Can you help me?
-    /
-  - I am from Egypt and am a minister of Egypt. /I am going to celebrate my 20th
-    wedding anniversary recently and I would like to give my beautiful wife a special
-    gift. /I heard that China has many wonderful handmade products and I thought
-    my wife would be happy to have one. /Can you help me? /
+    me? /[Keywords: Chinese Buddhism; burned to ashes ;placed in a furnace ;incendiary
+    substance]/'
+  - 'I am a vendor in the Bakara market. /The maritime merchants from China once
+    brought us many round things with square holes in the middle. /I can exchange
+    it for food, spices, clothes, it can even be used in the northern countries.
+    /I need more of these round things, can you help me? /[Keywords: round things
+    with square holes in the middle; exchange for items]/ '
+  - 'My ancestor Sinbad sailed from Arabia to China in 800 AD. /Now I want to follow
+    in his footsteps and set off from my hometown again to reach China. /I built
+    an antique wooden boat and now I have everything I need, except one of the most
+    important things in sailing, /and I will definately get lost without it! Can
+    you help me? /[Keywords: the most important things in sailing; get lost without
+    it]/'
+  - 'I am an Arab businessman living in Guangzhou. /Recently, our business group
+    is returning from overseas. /I heard that you have many treasures here, especially
+    the items with beautiful patterns but very fragile. /I also heard that some prople
+    use it to store food. /I want to pick some for my hometown. /Dear, can you help
+    me? /[Keywords: items with beautiful patterns but very fragile ;store food]/ '
+  - 'I am from Egypt and I am going to celebrate my 20th wedding anniversary recently.
+    I would like to prepare my husband a special gift. /I heard that China has many
+    wonderful handmade products and I thought my husband would be happy to own one.
+    /Can you help me? /[Keywords: handmade products]/ '
   character:
   - {fileID: 21300000, guid: ea37caa0293ea554fa47fe2629b8d76b, type: 3}
   - {fileID: 21300000, guid: 95b32efa55dc1a641abca261ff1faa16, type: 3}

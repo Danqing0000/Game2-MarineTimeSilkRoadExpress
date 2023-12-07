@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 public class Dialog : MonoBehaviour
 {
     public List<string> CRRequirement;
-    public List<Sprite> character;
     public TMP_Text Content;
     public string currentContent;
     string sentence;
@@ -28,6 +27,7 @@ public class Dialog : MonoBehaviour
     public Button nextItem;
     public Button nextSentence;
     public static bool openFeedbackPanel = false;
+    public ProfileChange myChange;
 
     public void start()
     {
@@ -105,14 +105,15 @@ public class Dialog : MonoBehaviour
         nextItem.gameObject.SetActive(false);
         tryAgain.gameObject.SetActive(false);
         nextSentence.gameObject.SetActive(false);
+        myChange.feedbackprofile();
         if (stat == true)
         {
-            Content.text = goodFeedback[Random.Range(0, 3)]; // right item
+            Content.text = goodFeedback[CameraControl.ChoseSerial]; // right item 正确的情况下选择的和实际的一定是一样的 避免实际serial递增
             nextItem.gameObject.SetActive(true);
         }
         else
         {
-            Content.text = badFeedback[Random.Range(0, 3)]; // wrong item
+            Content.text = badFeedback[GameManager.CRSerial]; // wrong item 错误的情况下cRserial不递增
             tryAgain.gameObject.SetActive(true);
         }
     }

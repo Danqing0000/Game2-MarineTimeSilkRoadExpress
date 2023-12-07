@@ -18,10 +18,11 @@ public class nameConfirm : MonoBehaviour
     public TMP_Text submit;
     public bool submitfinalState = false;
     public GameManager myManager;
+    public TaskUpload myUpload;
     public void Start()
     {
-        idname.text = "Name: " + myManager.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[0];
-        idnum.text = "ID Number: " + myManager.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[1];
+        idname.text = "Name: " + myUpload.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[0];
+        idnum.text = "ID Number: " + myUpload.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[1];
 
     }
 
@@ -45,7 +46,7 @@ public class nameConfirm : MonoBehaviour
         // }
 
 
-        if ((nameInput.text == myManager.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[0]) && (serialInput.text == myManager.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[1]))
+        if ((nameInput.text == myUpload.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[0]) && (serialInput.text == myUpload.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[1]))
         {
             Debug.Log("ok");
             notice.text = "correct";
@@ -53,10 +54,10 @@ public class nameConfirm : MonoBehaviour
             submitfinalState = true;
             //SceneManager.LoadScene("Scene00Start");
         }
-        if ((nameInput.text != myManager.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[0]) || (serialInput.text != myManager.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[1]))
+        if ((nameInput.text != myUpload.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[0]) || (serialInput.text != myUpload.listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[1]))
         {
             notice.text = "input wrong";
-            Debug.Log("wrong");
+            Debug.Log("wrong"   );
         }
         if ((serialInput.text == "") || (nameInput.text == "")) //it's not null!!!
         {

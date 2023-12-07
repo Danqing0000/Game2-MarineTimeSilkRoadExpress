@@ -6,6 +6,7 @@ using UnityEngine;
 public class ObjecttoPanel : MonoBehaviour
 {
     public GameObject panelPage;
+    public GameObject panelPage2;
     public TaskUpdate myUpdate;
     public GameObject next;
 
@@ -13,7 +14,10 @@ public class ObjecttoPanel : MonoBehaviour
     {
         if ((this.name == "palette") && (myUpdate.CheckAll(2) == true))
         {
-            panelPage.SetActive(true);
+            if (CameraControl.ChoseSerial == 3)
+                panelPage.SetActive(true);
+            else if (CameraControl.ChoseSerial == 4)
+                panelPage2.SetActive(true);
         }
         else if ((this.name == "package") && (myUpdate.CheckAll(5) == true))
         {

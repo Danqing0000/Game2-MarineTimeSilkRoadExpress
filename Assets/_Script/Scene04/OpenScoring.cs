@@ -9,6 +9,8 @@ public class OpenScoring : MonoBehaviour
     {
         gameObject.GetComponent<CanvasGroup>().alpha = 0;
         gameObject.GetComponent<CanvasGroup>().interactable = false;
+        gameObject.GetComponent<CanvasGroup>().blocksRaycasts = false;
+        GameObject.Find("model").GetComponent<AudioSource>().enabled = true;
     }
 
     // Update is called once per frame
@@ -20,6 +22,13 @@ public class OpenScoring : MonoBehaviour
             gameObject.GetComponent<CanvasGroup>().interactable = true;
             gameObject.GetComponent<CanvasGroup>().blocksRaycasts = true;
             //Debug.Log("Scoring opened already");
+            GameObject.Find("model").GetComponent<AudioSource>().enabled = false;
         }
+    }
+    public void clearScoring()
+    {
+        gameObject.GetComponent<CanvasGroup>().alpha = 0;
+        gameObject.GetComponent<CanvasGroup>().interactable = false;
+        gameObject.GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 }

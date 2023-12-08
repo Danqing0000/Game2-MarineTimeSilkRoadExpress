@@ -110,6 +110,7 @@ public class Dialog : MonoBehaviour
         {
             Content.text = goodFeedback[CameraControl.ChoseSerial]; // right item 正确的情况下选择的和实际的一定是一样的 避免实际serial递增
             nextItem.gameObject.SetActive(true);
+            Debug.Log("goodfeedback");
         }
         else
         {

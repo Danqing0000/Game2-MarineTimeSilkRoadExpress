@@ -25,7 +25,7 @@ public class matchcolor : MonoBehaviour
         changepiece[matchnum].changeButtonImage(color_record, matchnum);
         Debug.Log("color_record" + color_record + "matchnum" + matchnum);
         changeornot[matchnum] = true;
-        checkAllColor();
+        //checkAllColor();
         //set color to specific match piece.
         //matchnum = serial number of match pieces
         //color_record = serial number of colors
@@ -58,10 +58,12 @@ public class matchcolor : MonoBehaviour
     }
 
     public void submit()
-    {
+    {   
+        checkAllColor();
         if (colorFinalState == true)
         {
             coloringPanel.SetActive(false);
+            
         }
         else
             Debug.Log("haven't finish yet");

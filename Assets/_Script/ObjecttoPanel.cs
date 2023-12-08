@@ -12,7 +12,7 @@ public class ObjecttoPanel : MonoBehaviour
 
     void OnMouseDown()
     {
-        if ((this.name == "palette") && (myUpdate.CheckAll(2) == true))
+        if ((this.name == "palette"))
         {
             if (CameraControl.ChoseSerial == 3)
                 panelPage.SetActive(true);

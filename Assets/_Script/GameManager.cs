@@ -110,11 +110,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("Autoadd " + autoAdd);
         Debug.Log("start function running now");
 
-        if ((SceneManager.GetActiveScene().name == "Scene02Reception") && (scoring == true))
-        {
-            scroingPage = GameObject.Find("ScoringPage");
-            scroingPage.SetActive(true);
-        }
+        // if ((SceneManager.GetActiveScene().name == "Scene02Reception") && (scoring == true))
+        // {
+        //     scroingPage = GameObject.Find("ScoringPage");
+        //     scroingPage.SetActive(true);
+        //     Debug.Log("Find scoring");
+        // }
 
         //myRandom.currentSerial();
         Debug.Log(CRSerial);
@@ -174,6 +175,7 @@ public class GameManager : MonoBehaviour
             {
                 update.setTaskBool(i, false);
                 update.finishState[i] = true;
+                
             }
             else
             {

@@ -27,7 +27,7 @@ public class swipe : MonoBehaviour
 
     void OnMouseDown()
     {   
-        if ((finished == false) && (myUpdate.CheckAll(2)))
+        if ((finished == false) && (myUpdate.CheckAll(3)))
         {
             animator.SetTrigger("pickup");
         }
@@ -51,7 +51,7 @@ public class swipe : MonoBehaviour
 
     void MousePositionCkeck()
     {
-        if (m_startPos.x - m_endPos.x < 0)
+        if ((m_startPos.x - m_endPos.x < 0) && (myUpdate.CheckAll(3)))
         {
             //Debug.Log(m_startPos + "&" + m_endPos + "&" +"Left");
             //myAnimation.clip = left;
@@ -60,17 +60,19 @@ public class swipe : MonoBehaviour
             // StartCoroutine(CoundDown(5));
             // animator.SetBool("left", false);
             animator.SetTrigger("left");
+            gameObject.GetComponent<AudioSource>().Play();
             test = test +1;
             
 
         }
-        else if (m_startPos.x - m_endPos.x > 0)
+        else if ((m_startPos.x - m_endPos.x > 0) && (myUpdate.CheckAll(3)))
         {
             //Debug.Log(m_startPos + "&" + m_endPos + "&" +"Right");
             // myAnimation.clip = right;
             // myAnimation.Play(1);
             //animator.SetBool("right", true);
             animator.SetTrigger("right");
+            gameObject.GetComponent<AudioSource>().Play();
             test = test +1;
             
         }

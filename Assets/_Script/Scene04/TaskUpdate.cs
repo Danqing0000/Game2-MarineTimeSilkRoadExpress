@@ -43,6 +43,7 @@ public class TaskUpdate : MonoBehaviour
     {
         finishState[serialnumber] = true;
         taskeach[a-1].color = Color.gray;
+        gameObject.GetComponent<AudioSource>().Play();
         a = a + 1;
         if (serialnumber == 5)
             a = 2;

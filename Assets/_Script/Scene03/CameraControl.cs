@@ -22,6 +22,7 @@ public class CameraControl : MonoBehaviour
         animator.SetTrigger(triggerName);
         Debug.Log("move to " + triggerName);
         ChoseSerial = choseNow;
+        gameObject.GetComponent<AudioSource>().Play();
         //Debug.Log(ChoseSerial);
 
         file.sprite = fileList[CameraControl.ChoseSerial];

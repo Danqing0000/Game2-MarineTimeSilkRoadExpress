@@ -12,6 +12,7 @@ public class TaskUpload : MonoBehaviour
     public TaskUpdate update;
     public static bool allowtoAdd = true;
     public TaskUpload myUpload;
+    public HintChange myHint;
 
     [System.Serializable]
     public class CRs //定义一个新的类 CRs是一个内容为字符串的列表
@@ -68,6 +69,7 @@ public class TaskUpload : MonoBehaviour
                 update.getTotalTaskNum(taskSerialRecord); //不同文物的任务总数 最后一次更新的数值是可访问的最大序列号
             }
         }
+        myHint.hintchange();
         Debug.Log("Task updated already");
     }
 }

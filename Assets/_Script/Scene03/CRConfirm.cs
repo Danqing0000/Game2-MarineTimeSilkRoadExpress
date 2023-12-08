@@ -27,6 +27,6 @@ public class CRConfirm : MonoBehaviour
 
     public void contentUpdate() 
     {
-        notice.text = "Is that what he/ she wants?";
+        notice.text = "Is that what he wants?";
     }
 }

@@ -13,13 +13,11 @@ public class ProfileChange : MonoBehaviour
     public Image characterProfile;
     public TMP_Text Caller;
     public TMP_Text Place;
-    // Start is called before the first frame update
     public void profile()
     {
         characterProfile.sprite = character[GameManager.CRSerial];
         Caller.text = description[GameManager.CRSerial];
         Place.text = callingPlace[GameManager.CRSerial];
-        Debug.Log(GameManager.CRSerial);
     }
 
     public void feedbackprofile()
@@ -29,14 +27,12 @@ public class ProfileChange : MonoBehaviour
             characterProfile.sprite = character[CameraControl.ChoseSerial];
             Caller.text = description[CameraControl.ChoseSerial];
             Place.text = callingPlace[CameraControl.ChoseSerial];
-            Debug.Log(CameraControl.ChoseSerial);
         }
         else
         {
             characterProfile.sprite = character[GameManager.CRSerial];
             Caller.text = description[GameManager.CRSerial];
             Place.text = callingPlace[GameManager.CRSerial];
-            Debug.Log(GameManager.CRSerial);
         }
     }
 

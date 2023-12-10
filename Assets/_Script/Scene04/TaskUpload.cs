@@ -15,12 +15,12 @@ public class TaskUpload : MonoBehaviour
     public HintChange myHint;
 
     [System.Serializable]
-    public class CRs //定义一个新的类 CRs是一个内容为字符串的列表
+    public class CRs
     {
         public List<string> CRContentList;
     }
     [System.Serializable]
-    public class CRList //存储类型为CRs的列表
+    public class CRList
     {
         public List<CRs> CRLists;
     }
@@ -28,12 +28,9 @@ public class TaskUpload : MonoBehaviour
 
     public void Update()
     {
-        //Debug.Log("this is task upload");
-        //Debug.Log(allowtoAdd);
         if ((allowtoAdd == true) && (SceneManager.GetActiveScene().name == "Scene04Workspace"))
         {
             taskUpload();
-            Debug.Log("Uploaded");
             allowtoAdd = false;
         }
 
@@ -47,7 +44,6 @@ public class TaskUpload : MonoBehaviour
             item.SetActive(false);
         }
         CRObjectList[CameraControl.ChoseSerial].SetActive(true);
-        //Debug.Log("1");
         int taskSerialRecord = 0;
         foreach (TMP_Text taskContent in taskeach)
         {
@@ -56,20 +52,19 @@ public class TaskUpload : MonoBehaviour
 
         for (int i = 0; i < 6; i++)
         {
-            if (listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[i] == "/") //  /说明没有任务
+            if (listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[i] == "/") //  /means no task
             {
                 update.setTaskBool(i, false);
                 update.finishState[i] = true;
             }
             else
             {
-                taskeach[taskSerialRecord].text = listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[i];  //更新任务
+                taskeach[taskSerialRecord].text = listCRList.CRLists[CameraControl.ChoseSerial].CRContentList[i];  //update task
                 taskSerialRecord++;
                 update.setTaskBool(i, true);
-                update.getTotalTaskNum(taskSerialRecord); //不同文物的任务总数 最后一次更新的数值是可访问的最大序列号
+                update.getTotalTaskNum(taskSerialRecord); //total number of tasks
             }
         }
         myHint.hintchange();
-        Debug.Log("Task updated already");
     }
 }

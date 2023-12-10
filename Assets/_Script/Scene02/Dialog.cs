@@ -29,51 +29,36 @@ public class Dialog : MonoBehaviour
     public static bool openFeedbackPanel = false;
     public ProfileChange myChange;
 
-    public void start()
-    {
-        //print (CRRequirement[GameManager.CRSerial]);
-        //Content.text = CRRequirement[GameManager.CRSerial];
-    }
-
     public void Update()
     {
-        //Debug.Log("Feedback" + feedback);
         if ((GameManager.sceneCheck == true) && (feedback == true))
         {
-            //dialogPanel.SetActive(false);
             feedbackDialog(GameManager.itemCheck);
             feedback = false;
-            Debug.Log("Loading");
         }
 
     }
 
-    public void dialogUpload()  //点击next按键之后才触发这个功能
+    public void dialogUpload()  //click next and call the function
     {
-        currentContent = CRRequirement[GameManager.CRSerial]; //调取对应对话内容
-        //dialogPanel.SetActive(true);
+        currentContent = CRRequirement[GameManager.CRSerial]; //get the content of the dialog
         dialogPanel.GetComponent<CanvasGroup>().alpha = 1;
         dialogPanel.GetComponent<CanvasGroup>().interactable = false;
         dialogPanel.GetComponent<CanvasGroup>().blocksRaycasts = false;
-        Debug.Log("Dialog upload");
         if (test == true)
         {
             for (int i = stopSerial; i < currentContent.Length; i++)
             {
-                if (currentContent[i] != '/')  //通过/拆分句子，/是句子的结尾
+                if (currentContent[i] != '/')  // "/" is the end of a sentence
                 {
-                    sentence = sentence + currentContent[i]; //按照字符增加句子长度
-                    //Debug.Log(i);
+                    sentence = sentence + currentContent[i]; //increase the length of sentence
                 }
                 else
                 {
                     Content.text = sentence;
                     sentence = "";
-                    //Debug.Log(i);
-                    Debug.Log(sentence);
+
                     stopSerial = i + 1;
-                    //Debug.Log(stopSerial);
-                    //Debug.Log("length"+currentContent.Length);
                     break;
                 }
             }
@@ -81,10 +66,9 @@ public class Dialog : MonoBehaviour
             if (stopSerial == currentContent.Length)
             {
                 stopSerial = 0;
-                test = false; //控制不在结束对话的时候马上跳转到下个场景
+                test = false; //to make sure that it switch to the next scene after the player clicked next
 
                 Debug.Log("dialog finish. Change Scene.");
-
             }
         }
         else // finish upload dialog
@@ -99,7 +83,7 @@ public class Dialog : MonoBehaviour
         }
     }
 
-    public void feedbackDialog(bool stat) //stat说明事正向反馈or负面反馈
+    public void feedbackDialog(bool stat) //stat = true = positive feedback, stat = false = negative feedback
     {
         openFeedbackPanel = true;
         nextItem.gameObject.SetActive(false);
@@ -108,13 +92,12 @@ public class Dialog : MonoBehaviour
         myChange.feedbackprofile();
         if (stat == true)
         {
-            Content.text = goodFeedback[CameraControl.ChoseSerial]; // right item 正确的情况下选择的和实际的一定是一样的 避免实际serial递增
-            nextItem.gameObject.SetActive(true);
-            Debug.Log("goodfeedback");
+            Content.text = goodFeedback[CameraControl.ChoseSerial]; //CRserial increases if the player chose the right item, but ChoseSerial remains the same.
+            nextItem.gameObject.SetActive(true);                    //CRSerial = ChoseSetial if the player chose the right item
         }
         else
         {
-            Content.text = badFeedback[GameManager.CRSerial]; // wrong item 错误的情况下cRserial不递增
+            Content.text = badFeedback[GameManager.CRSerial]; //CRserial doesn't increase if chose the wrong item
             tryAgain.gameObject.SetActive(true);
         }
     }

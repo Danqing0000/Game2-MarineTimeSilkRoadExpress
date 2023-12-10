@@ -15,9 +15,5 @@ public class OpenDialog : MonoBehaviour
             dialogPanel.GetComponent<CanvasGroup>().alpha = 1;
             dialogPanel.GetComponent<CanvasGroup>().interactable = true;
         }
-        else
-        {
-
-        }
     }
 }

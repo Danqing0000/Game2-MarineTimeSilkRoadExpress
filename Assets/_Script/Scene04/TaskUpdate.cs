@@ -9,34 +9,23 @@ public class TaskUpdate : MonoBehaviour
 {
     public List<TMP_Text> taskeach; // change color after finish the task
     public TaskUpdate myUpdate;
-    public List<bool> taskCheck; //单项任务是否完成
+    public List<bool> taskCheck; //if the single task is finished
     public List<GameObject> tools;
     public List<bool> finishState;
     public int taskTotalNum;
-    public bool finalState; //所有任务的完成情况
+    public bool finalState; //if all the tasks are finished
     public bool currentTaskState;
     public int a = 2;
-
-    public void Start()
-    {
-        //Debug.Log(GameManager.listCRList.CRLists[GameManager.CRSerial].CRContentList[2]);
-        //GameManager.
-    }
 
     public void getTotalTaskNum(int x)
     {
         taskTotalNum = x;
-        //Debug.Log("total number" + x);
     }
 
     public void setTaskBool(int y, bool state) //recore total task
     {
-        //Debug.Log("number" + y);
-        //Debug.Log(state);
         taskCheck[y] = state;
-
         tools[y].GetComponent<Collider>().enabled = state;
-        //Debug.Log(tools[y].GetComponent<Collider>().enabled);
     }
 
     public void finishStateCheck(int serialnumber)
@@ -59,14 +48,12 @@ public class TaskUpdate : MonoBehaviour
             {
                 Debug.Log("previous unfinish");
                 finalState = false;
-                //i = i-1; //阻止i递增 确保一直按照顺序完成 no need??
                 break;
             }
             else if (currentTaskState == false)
             {
                 finishState[i] = true;
             }
-            
         }
         Debug.Log(finalState);
         return finalState; // finalstate = true, previous tasks have been finished; finalstate = false, previous tasks haven't finished

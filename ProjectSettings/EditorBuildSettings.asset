@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Scene02Reception.unity
     guid: 473c4f8b85f268e49a228b012cdac01e
-  - enabled: 0
-    path: Assets/_Scenes/Scene03Warehouse.unity
-    guid: fc88c465eb8d6cf46929ed29da50fb42
   - enabled: 1
     path: Assets/_Scenes/Scene03WarehouseBackup.unity
     guid: 4a68675ca14ebf1459b4d884e17f6000
